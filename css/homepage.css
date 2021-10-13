@@ -1,120 +1,119 @@
-.homepage{
-    /* padding: 0 6vw; */
-    width: 100vw;
-
+.homepage {
+  /* padding: 0 6vw; */
+  width: 100vw;
 }
 
-.navLogo{
-    width: 8vh;
-    cursor: pointer;
+.navLogo {
+  width: 8vh;
+  cursor: pointer;
 }
 
-.navbar{
-    padding: 4vh 6vw;
-    display: flex;
-    justify-content: space-between;
-    position:absolute;
-    width: 88vw;
+.navbar {
+  padding: 4vh 6vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 88vw;
 }
 
-.navOptionCont{
-    display: flex;
-    justify-content: space-between;
-    width: 50vw;
-    align-items: center;
+.navOptionCont {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  align-items: center;
 }
 
-.navOptions.active{
-    background: linear-gradient(90deg, #0573B3 -0.01%, #02B6D4 99.19%);
-    padding: 1vh 2vh;
-    border-radius: 10px;
+.navOptions.active {
+  background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
+  padding: 1vh 2vh;
+  border-radius: 10px;
 }
 
-.heroCont{
-    background-repeat: no-repeat;
-    background-image: url(../utils/images/bg1.svg);
-    background-size: cover;
-    width: inherit;
-    height: 110vh;
+.heroCont {
+  background-repeat: no-repeat;
+  background-image: url(../utils/images/bg1.svg);
+  background-size: cover;
+  width: inherit;
+  height: 110vh;
 }
 
-.heroSection{
-    display: flex;
+.heroSection {
+  display: flex;
 }
 
-.heroText{
-    margin: 0 0 0 6vw;
-    font-weight: 700;
+.heroText {
+  margin: 0 0 0 6vw;
+  font-weight: 700;
 }
 
-.aboutCont{
-    display: flex;
-    width: inherit;
+.aboutCont {
+  display: flex;
+  width: inherit;
 }
 
-.teamCont{
-    background-repeat: no-repeat;
-    background-image: url(../utils/images/bg2.svg);
-    background-size: cover;
-    width: inherit;
+.teamCont {
+  background-repeat: no-repeat;
+  background-image: url(../utils/images/bg2.svg);
+  background-size: cover;
+  width: inherit;
 }
 
-.teamTxt{
-    font-size: 4.8vh;
-    font-weight: 800;
-    text-align: center;
+.teamTxt {
+  font-size: 4.8vh;
+  font-weight: 800;
+  text-align: center;
 }
 
-.OBS{
-    display: flex;
-    justify-items: center;
-    justify-content: space-evenly;
-    padding-top: 4vh;
+.OBS {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  padding-top: 4vh;
 }
 
-.OBImgBg{
-    width: 24vw;
-    height: 24vw;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.OBImgBg {
+  width: 24vw;
+  height: 24vw;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.OBImg{
-    border-radius: 1000px;
-    width: 16vw;
-    height: 16vw;
+.OBImg {
+  border-radius: 1000px;
+  width: 16vw;
+  height: 16vw;
 }
 
-.CC{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    padding-top: 4vh;   
+.CC {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding-top: 4vh;
 }
 
-.CCImgBg{
-    width: 14vw;
-    height: 14vw;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.CCImgBg {
+  width: 14vw;
+  height: 14vw;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.CCImg{
-    border-radius: 1000px;
-    width: 9vw;
-    height: 9vw;
+.CCImg {
+  border-radius: 1000px;
+  width: 9vw;
+  height: 9vw;
 }
 
-.highlightsTxt{
-    font-size: 5vh;
-    font-weight: 800;
+.highlightsTxt {
+  font-size: 5vh;
+  font-weight: 800;
 }
 
-.showcaseCont{
-    display: flex;
-    justify-content: space-evenly;
+.showcaseCont {
+  display: flex;
+  justify-content: space-evenly;
 }
