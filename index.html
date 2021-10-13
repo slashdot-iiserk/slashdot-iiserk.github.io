@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/homepage.css" />
     <link rel="stylesheet" href="./css/allFonts.css" />
     <link rel="stylesheet" href="./css/colours.css" />
+
+    <script defer type="module" src="./js/main.js"></script>
   </head>
   <body>
     <div class="homepage">
@@ -184,8 +186,9 @@
         </div>
         <div style="height: 10vh"></div>
         <div class="white teamTxt">OFFICE BEARERS</div>
+        <!-- OBs -->
         <div class="OBS" id="obs">
-          <div style="font-weight: 600; text-align: center">
+          <div class="CCCard">
             <div
               class="OBImgBg"
               style="background-image: url(./utils/images/yellow_circle.svg)"
@@ -195,7 +198,7 @@
             <div class="white" style="font-size: 4vh">Abhay Kshirsagar</div>
             <div class="grey" style="font-size: 2.4vh">TREASURER</div>
           </div>
-          <div style="font-weight: 600; text-align: center">
+          <div class="CCCard">
             <div
               class="OBImgBg"
               style="background-image: url(./utils/images/red_circle.svg)"
@@ -205,7 +208,7 @@
             <div class="white" style="font-size: 4vh">Anurit Dey</div>
             <div class="grey" style="font-size: 2.4vh">SECRETARY</div>
           </div>
-          <div style="font-weight: 600; text-align: center">
+          <div class="CCCard">
             <div
               class="OBImgBg"
               style="background-image: url(./utils/images/blue_circle.svg)"
@@ -223,171 +226,23 @@
 
         <div style="height: 0vh"></div>
 
-        <div class="CC" id="CC">
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/yellow_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
+        <!-- CC -->
+        <div id="CC"></div>
+        <!-- Card for each member is added above using javascript.
+        This is how it looks:
+        <div class="CCCard">
+          <div
+            class="CCImgBg"
+            style="background-image: url(./utils/images/yellow_circle.svg)"
+          >
+            <img class="CCImg" src="./utils/images/img.png" alt="" />
           </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/yellow_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/yellow_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/yellow_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/yellow_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/yellow_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
+          <div class="white" style="font-size: 2vh">Name Surname</div>
         </div>
-        <div class="CC" id="CC">
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/red_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/red_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/red_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/pp.jpg" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/red_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/red_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-        </div>
-        <div class="CC" id="CC">
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/blue_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/blue_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/blue_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/blue_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/blue_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-          <div style="font-weight: 600; text-align: center">
-            <div
-              class="CCImgBg"
-              style="background-image: url(./utils/images/blue_circle.svg)"
-            >
-              <img class="CCImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 2vh">Name Surname</div>
-          </div>
-        </div>
+        -->
 
         <div style="height: 16vh"></div>
       </div>
-      <!-- OBs -->
-
-      <!-- CC -->
     </div>
 
     <!-- full page info abt team member -->

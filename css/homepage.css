@@ -86,11 +86,18 @@
   height: 16vw;
 }
 
-.CC {
+.CCRow {
   display: flex;
   justify-items: center;
   justify-content: center;
   padding-top: 4vh;
+  width: fit-content;
+  margin: auto;
+}
+
+.CCCard {
+  font-weight: 600;
+  text-align: center;
 }
 
 .CCImgBg {
@@ -103,7 +110,7 @@
 }
 
 .CCImg {
-  border-radius: 1000px;
+  border-radius: 50%;
   width: 9vw;
   height: 9vw;
 }
