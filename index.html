@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./utils/images/logo.svg">
+    <title>/.</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/allFonts.css">
+    <link rel="stylesheet" href="./css/colours.css">
+</head>
+<body>
+    <div class="homepage">
+        <!-- navbar -->
+            <div class="navbar">
+                <div>
+                    <img class="navLogo" src="./utils/images/logo.svg" alt="">
+                </div>
+                <div class="navOptionCont white">
+                    <div class="navOptions active" onclick="navclick('navHome')" id="navHome"> <a href="#home">HOME</a></div>
+                    <div class="navOptions" onclick="navclick('navAbout')" id="navAbout"> <a href="#about">ABOUT US</a></div>
+                    <div class="navOptions" onclick="navclick('navShowcase')" id="navShowcase"> <a href="#showcase">SHOWCASE</a></div>
+                    <div class="navOptions" onclick="navclick('navTeam')" id="navTeam"> <a href="#team">TEAM</a></div>
+                </div>
+            </div>
+
+            <!-- spacer -->
+        
+        <!-- hero section -->
+            <div class="heroCont" id="home">
+                <div style="height: 32vh;"></div>
+
+                <div class="heroSection">
+                    <div class="heroText" style="width: 38vw;padding: 6vh 0 0 0;">
+                        <div class="white" style="font-size: 5vh;letter-spacing: 10px;">
+                            WELCOME TO
+                        </div>
+                        <div class="bluishGrey" style="font-size: 6vh;letter-spacing: 16px;font-weight: 800;">
+                            SLASHDOT
+                        </div>
+                        <div class="grey" style="letter-spacing: 4px;width:24vw;padding: 2vh 0 0 0;">
+                            THE CODING AND DESIGNING
+                            CLUB OF IISER KOLKATA
+                        </div>
+                    </div>
+                    <div style="width: 62vw;">
+                        <img src="./utils/images/section1.svg" alt="" style="width: 54vw;">
+                    </div>
+                </div>
+                
+            </div>
+        <!-- about section -->
+            <div style="height: 12vh;"></div>
+
+            <div class="aboutCont" id="about">
+                <div style="width: 50vw;">
+                    <img src="./utils/images/section2.svg" alt="" style="width:44vw">
+                </div>
+                <div style="width: 38vw;padding: 0 6vw 0 0">
+                    <div class="reddish" style="display: flex;align-items: center;font-size: 3vh;font-weight: 700;letter-spacing: 4px;"> 
+                        <div style="height: 4px;width: 100px;background-color: #E53B6E;"></div>
+                        &nbsp &nbsp &nbsp ABOUT US
+                    </div>
+                    <div style="font-size: 5vh;font-weight: 800;letter-spacing: 4px;padding: 3vh 0;">
+                        EXPLAIN ABOUT OF
+                        <font class="bluishGrey">SLASHDOT</font> IN ONE OR
+                        TWO LINES
+                    </div>
+                    <div style="    font-size: 2.7vh;font-weight: 500;">
+                        This is some random text. Chances are good
+                        that there’s a cloud software as a service solution
+                        on the market today that will serve your core
+                        back-office needs. Many of those products offer
+                        the potential not just to move your data and
+                        processes to cloud. This is some random text.
+                        Chances are good that there’s a cloud software
+                        as a service solution on the market today that
+                        will serve your core back-office needs.
+                    </div>
+                </div>
+            </div>
+        <!-- showcase -->
+            <div id="showcase" >
+                <div style="height: 16vh;"></div>
+                <div class="bluishGrey" style="display: flex;align-items: center;justify-content: center;font-size: 3vh;font-weight: 700;letter-spacing: 4px;"> 
+                    <div style="height: 4px;width: 100px;background-color: #02B6D4"></div>
+                    &nbsp &nbsp &nbsp SHOWCASE &nbsp &nbsp &nbsp
+                    <div style="height: 4px;width: 100px;background-color: #02B6D4"></div>
+                </div>
+                <div style="height: 12vh;"></div>
+                <div class="showcaseCont">
+                    <div style="width: 32vw;padding: 2vh 0 0 6vw">
+                        <div class="highlightsTxt">
+                            SOME 
+                            <font class="orangishLite">
+                                HIGHLIGHTED
+                            </font>
+                            PROJECTS MADE BY THE TEAM
+                        </div>
+                    </div>
+                    <div style="background-image:url(./utils/images/bg2.svg);width: 52vw;height: 70vh;border-radius: 50px;"></div>
+                </div>
+            </div>
+        <!-- meet the team -->
+            <!-- spacer -->
+                <div style="height: 12vh;"></div>
+                <div class="teamCont" id="team">
+                    <div style="height: 10vh;"></div>
+                    <div class="orangish" style="display: flex;align-items: center;justify-content: center;font-size: 3vh;font-weight: 700;letter-spacing: 4px;"> 
+                        <div style="height: 4px;width: 100px;background-color: #FC7701;"></div>
+                        &nbsp &nbsp &nbsp MEET THE TEAM &nbsp &nbsp &nbsp
+                        <div style="height: 4px;width: 100px;background-color: #FC7701;"></div>
+                    </div>
+                    <div style="height: 10vh;"></div>
+                    <div class="white teamTxt">OFFICE BEARERS</div>
+                    <div class="OBS" id="obs">
+                        <div style="font-weight: 600;text-align: center;">
+                            <div class="OBImgBg" style="background-image: url(./utils/images/yellow_circle.svg);">
+                                <img class="OBImg" src="./utils/images/img.png" alt="">
+                            </div>
+                            <div class="white" style="font-size: 4vh;">
+                                Abhay Kshirsagar
+                            </div>
+                            <div class="grey" style="font-size: 2.4vh;" >
+                                TREASURER
+                            </div>
+                        </div>
+                        <div style="font-weight: 600;text-align: center;">
+                            <div class="OBImgBg" style="background-image: url(./utils/images/red_circle.svg);">
+                                <img class="OBImg" src="./utils/images/img.png" alt="">
+                            </div>
+                            <div class="white" style="font-size: 4vh;">
+                                Anurit Dey
+                            </div>
+                            <div class="grey" style="font-size: 2.4vh;" >
+                                SECRETARY
+                            </div>
+                        </div>
+                        <div style="font-weight: 600;text-align: center;">
+                            <div class="OBImgBg" style="background-image: url(./utils/images/blue_circle.svg);">
+                                <img class="OBImg" src="./utils/images/img.png" alt="">
+                            </div>
+                            <div class="white" style="font-size: 4vh;">
+                                Rohit Verma
+                            </div>
+                            <div class="grey" style="font-size: 2.4vh;" >
+                                CONVENER
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="height: 16vh;"></div>
+
+                    <div class="white teamTxt">CORE COMMITTEE</div>
+                    
+                    <div style="height: 0vh;"></div>
+
+                    <div class="CC" id="CC">
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/yellow_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/yellow_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/yellow_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/yellow_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/yellow_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/yellow_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                    </div>
+                    <div class="CC" id="CC">
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/red_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/red_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/red_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/pp.jpg" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/red_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/red_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                    </div>
+                    <div class="CC" id="CC">
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/blue_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/blue_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/blue_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/blue_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/blue_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                            <div style="font-weight: 600;text-align: center;">
+                                <div class="CCImgBg" style="background-image: url(./utils/images/blue_circle.svg);">
+                                    <img class="CCImg" src="./utils/images/img.png" alt="">
+                                </div>
+                                <div class="white" style="font-size: 2vh;">
+                                    Name Surname
+                                </div>
+                            </div>
+                    </div>
+
+                    <div style="height: 16vh;"></div>
+                </div>
+            <!-- OBs -->
+                
+            <!-- CC -->
+    </div>
+
+    <!-- full page info abt team member -->
+</body>
+</html>

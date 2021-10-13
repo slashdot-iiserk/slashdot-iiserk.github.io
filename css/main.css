@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+.flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border: none;
+    background: none;
+    font-style: none;
+    font-family: 'Poppins', sans-serif;
+}
