@@ -10,7 +10,7 @@ import { CCMembers } from "./memberData.js";
 function createCard(root, memberInfo, circleColor) {
   const { name, image, designation } = memberInfo;
   root.innerHTML += `
-  <div class="CCCard">
+  <div class="tile">
     <div
       class="CCImgBg"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
