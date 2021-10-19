@@ -1,4 +1,51 @@
 import { CCMembers } from "./memberData.js";
+import { Projects } from "./memberProjects.js";
+
+function disablePrevButton(showcaseButtons){
+  for(let i = 0; i < showcaseButtons.length; i++){
+    let someButton = showcaseButtons[i];
+    if (someButton.getAttribute("value") == "white"){
+      someButton.setAttribute("value", "red");
+      for(let j=0; j < someButton.children.length; j++){
+        someButton.children[j].classList.add("white");
+        someButton.children[j].classList.remove("reddish");
+      }
+      someButton.style.background = "linear-gradient(180deg, #E43B6E 5.72%, #FF8370 90.17%)";          
+    }
+  }
+}
+function enableButton(showcaseButton){
+  for(let i=0; i < showcaseButton.children.length; i++){
+    showcaseButton.children[i].classList.add("reddish");
+    showcaseButton.children[i].classList.remove("white");
+  }
+  showcaseButton.style.background = "white";
+  showcaseButton.setAttribute("value", "white");
+}
+
+function validClick(showcaseButton, showcaseButtons, showcaseImage, index){
+  disablePrevButton(showcaseButtons);   /*Iterates through other buttons and deactivates previously active button */
+  enableButton(showcaseButton);
+  showcaseImage.style.backgroundImage = `url(${Projects[index].image})`;  /* Update project image */
+  showcaseImage.classList.remove("showcase-change");         /*Image updation animation */
+  void showcaseImage.offsetWidth;
+  showcaseImage.classList.add("showcase-change");
+}
+
+function funShowcase(){
+  const showcaseButtons = document.querySelectorAll(".showcase-button");
+  const showcaseImage = document.querySelector(".showcase-image");
+  showcaseButtons.forEach((showcaseButton, index) => {            /*Displaying project details */
+    showcaseButton.children[0].innerHTML = Projects[index].name;
+    showcaseButton.children[1].innerHTML = Projects[index].title; 
+    showcaseButton.addEventListener("click", () => {              
+      if(showcaseButton.getAttribute("value") == "red"){          /*Click is valid if button was red while clicking */       
+        validClick(showcaseButton, showcaseButtons, showcaseImage, index);
+      }
+    }, false);
+  });
+}
+funShowcase();
 
 /**
  * Creates a card for a given person and adds it to the `root` element
@@ -7,6 +54,7 @@ import { CCMembers } from "./memberData.js";
  * @param {JSON} memberInfo details of the member
  * @param {string} circleColor color of circle around the image
  */
+
 function createCard(root, memberInfo, circleColor) {
   const { name, image, designation } = memberInfo;
   root.innerHTML += `
@@ -51,5 +99,4 @@ function appendMembers() {
     index--;
   }
 }
-
 appendMembers();

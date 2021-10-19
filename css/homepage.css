@@ -119,8 +119,39 @@
   font-size: 5vh;
   font-weight: 800;
 }
-
-.showcaseCont {
+.showcaseCont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.showcase-buttons{
+  display: flex; 
+  flex-direction: column;
+  height: 45vh; 
+  margin: 5px;
+}
+.showcase-button{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  height: 15vh;
+  padding-left: 8px;
+}
+.showcase-change{
+  animation-name: newshowcase;
+  animation-duration: 1.2s;
+}
+@keyframes newshowcase{
+from{
+  opacity: 0;
+}
+to{
+  opacity: 1;
+}
+}
+.showcase-image{
+  width: 52vw;
+  height: 70vh;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
 }
