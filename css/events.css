@@ -1,0 +1,104 @@
+.eventspage {
+    /* padding: 0 6vw; */
+    width: 100vw;
+  }
+  
+  .navLogo {
+    width: 8vh;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    padding: 4vh 6vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 88vw;
+  }
+  
+  .navOptionCont {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    align-items: center;
+  }
+  
+  .navOptions.active {
+    background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
+    padding: 1vh 2vh;
+    border-radius: 10px;
+  }
+  
+  .hero-cont {
+    background-repeat: no-repeat;
+    background-image: url(../utils/images/bg1.svg);
+    background-size: cover;
+    width: inherit;
+    height: 110vh;
+  }
+   
+  .hero-text {
+    margin: 0 0 0 6vw;
+    font-weight: 700;
+  }
+  
+  .past-event-txt {
+    font-size: 4.8vh;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .eventbox{
+      width: 30vw;
+      height: 45vh;
+      background: white;
+      border-radius: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    padding: 0 3vw 0 3vw;
+  }
+
+  .upcoming-events{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .past-event-box{
+      display: flex;
+      flex-direction: row;
+      height: 40vh;
+      justify-content: space-evenly;
+      margin: 0 6vw 6vw;
+  }
+
+  .past-events-boxes{
+      width: inherit;
+  }
+
+  .past-event-desc{
+    width: 40vw;
+    font-size: 3vh;
+  }
+
+  .past-event-topic{
+    font-size: 3.5vh;
+    font-weight: 600;
+    font-style: caps;
+  }
+
+  .past-event-image{
+    height: 40vh;
+  }
+
+  .event-topic{
+    font-size: 30px;
+  }
+
+  .event-date{
+    font-size: 18px;
+  }
+
+  .event-venue{
+    font-size: 18px;
+  }
