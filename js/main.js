@@ -1,4 +1,4 @@
-import { CCMembers } from "./memberData.js";
+import { CCMembers, OBMembers } from "./memberData.js";
 
 /**
  * Creates a card for a given person and adds it to the `root` element
@@ -6,20 +6,20 @@ import { CCMembers } from "./memberData.js";
  * @param {HTMLDivElement} root element to which the card will be attached
  * @param {JSON} memberInfo details of the member
  * @param {string} circleColor color of circle around the image
- * @param {number} card number (used as an unique indentifier)
+ * @param {boolean} isOB true if the the card is being created for OB
  */
-function createCard(root, memberInfo, circleColor) {
+function createCard(root, memberInfo, circleColor, isOB = false) {
   const { name, image, designation, description, socialLinks } = memberInfo;
   root.innerHTML += `
-  <div class="tile member">
+  <div class="tile">
     <div
-      class="SmallImgBg"
+      class="${isOB ? "LargeImgBg" : "SmallImgBg"}"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
-      <img class="SmallImg" src="${image}" alt="${name}'s Picture" />
+      <img class="${isOB ? "LargeImg" : "SmallImg"}" src="${image}" alt="${name}'s Picture" />
     </div>
-    <div class="white" style="font-size: 2vh">${name}</div>
-    <div class="grey" style="font-size: 1.5vh">${designation.toUpperCase()}</div>
+    <div class="white" style="font-size: ${isOB ? "4vh" : "2vh"}">${name}</div>
+    <div class="grey" style="font-size: ${isOB ? "2.4vh" : "1.5vh"}">${designation.toUpperCase()}</div>
   </div>
   <div class="popup-container">
     <div class="description">
@@ -72,14 +72,16 @@ function appendMembers() {
     }
 
     const member = CCMembers.shift();
-    createCard(
-      row,
-      member,
-      rowIndex % 3 == 1 ? "red" : rowIndex % 3 == 2 ? "blue" : "yellow",
-      CCMembers.length
-    );
+    createCard(row, member, rowIndex % 3 == 1 ? "red" : rowIndex % 3 == 2 ? "blue" : "yellow");
     index--;
   }
+}
+
+function appendOBs() {
+  const OBSection = document.getElementById("obs");
+  createCard(OBSection, OBMembers[0], "yellow", true);
+  createCard(OBSection, OBMembers[1], "red", true);
+  createCard(OBSection, OBMembers[2], "blue", true);
 }
 
 /**
@@ -106,9 +108,10 @@ function toggleScroll() {
   document.body.classList.toggle("no-scroll");
 }
 
+appendOBs();
 appendMembers();
 
-const memberCards = document.querySelectorAll(".member");
+const memberCards = document.querySelectorAll(".SmallImgBg");
 const popups = document.querySelectorAll(".popup-container");
 
 memberCards.forEach((card, index) =>

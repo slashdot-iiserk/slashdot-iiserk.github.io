@@ -154,6 +154,7 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: help;
 }
 
 .SmallImg {
