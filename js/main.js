@@ -56,7 +56,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
  */
 function appendMembers() {
   const CCSection = document.getElementById("CC");
-  const rowSize = 6;
+  const rowSize = 5;
   let rowIndex = 0;
   let index = rowSize;
   let row = document.createElement("div");
