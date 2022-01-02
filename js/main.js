@@ -13,10 +13,10 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
   root.innerHTML += `
   <div class="tile">
     <div
-      class="${isOB ? "LargeImgBg" : "SmallImgBg"}"
+      class="imgBg ${isOB ? "imgBg--large" : "imgBg--small"} popup-btn"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
-      <img class="${isOB ? "LargeImg" : "SmallImg"}" src="${image}" alt="${name}'s Picture" />
+      <img class="roundImg ${isOB ? "img--large" : "img--small"}" src="${image}" alt="${name}'s Picture" />
     </div>
     <div class="white" style="font-size: ${isOB ? "4vh" : "2vh"}">${name}</div>
     <div class="grey" style="font-size: ${isOB ? "2.4vh" : "1.5vh"}">${designation.toUpperCase()}</div>
@@ -24,10 +24,10 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
   <div class="popup-container">
     <div class="description">
     <div
-      class="LargeImgBg"
+      class="imgBg imgBg--large"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
-      <img class="LargeImg" src="${image}" alt="${name}'s Picture" />
+      <img class="roundImg img--large" src="${image}" alt="${name}'s Picture" />
     </div>
       <div style="width: 35vw; text-align: left">
         <div class="white" style="font-size: 3vw">
@@ -111,7 +111,7 @@ function toggleScroll() {
 appendOBs();
 appendMembers();
 
-const memberCards = document.querySelectorAll(".SmallImgBg");
+const memberCards = document.querySelectorAll(".popup-btn");
 const popups = document.querySelectorAll(".popup-container");
 
 memberCards.forEach((card, index) =>
