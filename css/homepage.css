@@ -71,7 +71,7 @@
   padding-top: 4vh;
 }
 
-.OBImgBg {
+.LargeImgBg {
   width: 24vw;
   height: 24vw;
   background-size: cover;
@@ -80,27 +80,39 @@
   justify-content: center;
 }
 
-.OBImg {
+.LargeImg {
   border-radius: 1000px;
   width: 16vw;
   height: 16vw;
 }
 
 .popup-container {
-  color: white;
   position: fixed;
-  width: 100%;
   top: 0px;
-  bottom: 0px;
-  right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.685);
+  z-index: 9998;
+  opacity: 0;
+  pointer-events: none;
+  padding: 10px 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+.popup-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+body.no-scroll {
+  overflow-y: hidden;
 }
 .description {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 60%;
   height: fit-content;
   background-color: #272727;
@@ -116,6 +128,7 @@
 }
 
 .social div {
+  margin-top: 5%;
   width: 40px;
   height: 40px;
   background-color: #02b6d4;
@@ -134,7 +147,7 @@
   text-align: center;
 }
 
-.CCImgBg {
+.SmallImgBg {
   width: 14vw;
   height: 14vw;
   background-size: cover;
@@ -143,7 +156,7 @@
   justify-content: center;
 }
 
-.CCImg {
+.SmallImg {
   border-radius: 50%;
   width: 9vw;
   height: 9vw;
