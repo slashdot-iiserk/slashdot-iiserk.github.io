@@ -56,7 +56,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-    padding: 0 3vw 0 3vw;
+      padding: 0 3vw 0 3vw;
+      cursor: pointer;
   }
 
   .upcoming-events{
@@ -70,6 +71,7 @@
       height: 40vh;
       justify-content: space-evenly;
       margin: 0 6vw 6vw;
+      cursor: pointer;
   }
 
   .past-events-boxes{
