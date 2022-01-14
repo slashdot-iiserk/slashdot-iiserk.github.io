@@ -32,7 +32,7 @@
           <div class="navOptions" onclick="navclick('navAbout')" id="navAbout">
             <a href="#about">ABOUT US</a>
           </div>
-          <div class="navOptions" >
+          <div class="navOptions">
             <a href="events.html">EVENTS</a>
           </div>
           <div
@@ -112,11 +112,11 @@
             <font class="bluishGrey">SLASHDOT</font> IN ONE OR TWO LINES
           </div>
           <div style="font-size: 2.7vh; font-weight: 500">
-            This is some random text. Chances are good that there’s a cloud
+            This is some random text. Chances are good that there's a cloud
             software as a service solution on the market today that will serve
             your core back-office needs. Many of those products offer the
             potential not just to move your data and processes to cloud. This is
-            some random text. Chances are good that there’s a cloud software as
+            some random text. Chances are good that there's a cloud software as
             a service solution on the market today that will serve your core
             back-office needs.
           </div>
@@ -146,31 +146,62 @@
         </div>
         <div style="height: 12vh"></div>
         <div class="showcaseCont">
-          
-          <div style="display: flex; flex-direction: column;">
-              <div style="width: 32vw; padding: 2vh 0 0 6vw">
-            <div class="highlightsTxt">
-              SOME
-              <font class="orangishLite"> HIGHLIGHTED </font>
-              PROJECTS MADE BY THE TEAM
+          <div style="display: flex; flex-direction: column">
+            <div style="width: 32vw; padding: 2vh 0 0 6vw">
+              <div class="highlightsTxt">
+                SOME
+                <font class="orangishLite"> HIGHLIGHTED </font>
+                PROJECTS MADE BY THE TEAM
+              </div>
             </div>
-          </div>
-          <div class="showcase-buttons" style="border: 2px solid #E43B6E; border-radius: 15px;">
-              <div class="showcase-button" value="red" style="background: linear-gradient(180deg, #E43B6E 5.72%, #FF8370 90.17%);border-radius: 15px 15px 0 0;">
-            <div class="white">Name</div>
-            <div class="white">TITLE</div>
-            </div>
-              <div class="showcase-button" value="white" style="background: white;">
-                <div class="reddish">Name</div>
-                <div class="reddish">TITLE</div>
-            </div>
-              <div class="showcase-button" value="red" style="background: linear-gradient(180deg, #E43B6E 5.72%, #FF8370 90.17%);border-radius:0 0 15px 15px;">
+            <div
+              class="showcase-buttons"
+              style="border: 2px solid #e43b6e; border-radius: 15px"
+            >
+              <div
+                class="showcase-button"
+                value="red"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    #e43b6e 5.72%,
+                    #ff8370 90.17%
+                  );
+                  border-radius: 15px 15px 0 0;
+                "
+              >
                 <div class="white">Name</div>
                 <div class="white">TITLE</div>
+              </div>
+              <div
+                class="showcase-button"
+                value="white"
+                style="background: white"
+              >
+                <div class="reddish">Name</div>
+                <div class="reddish">TITLE</div>
+              </div>
+              <div
+                class="showcase-button"
+                value="red"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    #e43b6e 5.72%,
+                    #ff8370 90.17%
+                  );
+                  border-radius: 0 0 15px 15px;
+                "
+              >
+                <div class="white">Name</div>
+                <div class="white">TITLE</div>
+              </div>
             </div>
           </div>
-          </div>
-          <div class="showcase-image" style="background-image: url(./utils/images/projects/project_b.png);"></div>
+          <div
+            class="showcase-image"
+            style="background-image: url(./utils/images/projects/project_b.png)"
+          ></div>
         </div>
       </div>
       <!-- meet the team -->
@@ -201,36 +232,7 @@
         <div class="white teamTxt">OFFICE BEARERS</div>
         <!-- OBs -->
         <div class="OBS" id="obs">
-          <div class="CCCard">
-            <div
-              class="OBImgBg"
-              style="background-image: url(./utils/images/yellow_circle.svg)"
-            >
-              <img class="OBImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 4vh">Abhay Kshirsagar</div>
-            <div class="grey" style="font-size: 2.4vh">TREASURER</div>
-          </div>
-          <div class="CCCard">
-            <div
-              class="OBImgBg"
-              style="background-image: url(./utils/images/red_circle.svg)"
-            >
-              <img class="OBImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 4vh">Anurit Dey</div>
-            <div class="grey" style="font-size: 2.4vh">SECRETARY</div>
-          </div>
-          <div class="CCCard">
-            <div
-              class="OBImgBg"
-              style="background-image: url(./utils/images/blue_circle.svg)"
-            >
-              <img class="OBImg" src="./utils/images/img.png" alt="" />
-            </div>
-            <div class="white" style="font-size: 4vh">Rohit Verma</div>
-            <div class="grey" style="font-size: 2.4vh">CONVENER</div>
-          </div>
+          <!-- Card for each ob is added here using javascript. -->
         </div>
 
         <div style="height: 16vh"></div>
@@ -240,19 +242,9 @@
         <div style="height: 0vh"></div>
 
         <!-- CC -->
-        <div id="CC"></div>
-        <!-- Card for each member is added above using javascript.
-        This is how it looks:
-        <div class="CCCard">
-          <div
-            class="CCImgBg"
-            style="background-image: url(./utils/images/yellow_circle.svg)"
-          >
-            <img class="CCImg" src="./utils/images/img.png" alt="" />
-          </div>
-          <div class="white" style="font-size: 2vh">Name Surname</div>
+        <div id="CC">
+          <!-- Card for each member is added here using javascript. -->
         </div>
-        -->
 
         <div style="height: 16vh"></div>
       </div>
