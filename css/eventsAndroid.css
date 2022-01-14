@@ -1,0 +1,106 @@
+.events-page {
+  width: 100%;
+}
+
+.navLogo {
+  display: none;
+  margin: 0
+}
+
+.navbar{
+  display: none;
+  margin: 0
+}
+
+.navOptionCont{
+  display: none;
+  margin: 0;
+}
+
+.hero-cont {
+  background-repeat: no-repeat;
+  background-image: url(../utils/images/bg1.svg);
+  background-size: cover;
+  width: inherit;
+  height: 170vh;
+  width: 100%;
+}
+ 
+.hero-text {
+  text-align: center;
+  font-weight: 700;
+}
+
+.past-event-txt {
+  font-size: 4.8vh;
+  font-weight: 800;
+  text-align: center;
+}
+
+.eventbox{
+    width: 80vw;
+    height: 45vh;
+    background: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0vw 3vw 0 3vw;
+    margin: 2vh 0;
+    cursor: pointer;
+}
+
+.upcoming-events{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.past-event-box{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.past-events-boxes{
+    width: inherit;
+}
+
+.past-event-desc{
+  width: inherit;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.past-event-topic{
+  font-size: 3vh;
+  font-weight: 600;
+  font-style: caps;
+  text-align: center;
+}
+
+.past-event-image{
+  height: 40vh;
+  display: block;
+}
+
+.event-topic{
+  font-size: 30px;
+}
+
+.event-date{
+  font-size: 18px;
+}
+
+.event-venue{
+  font-size: 18px;
+}
+
+div.second-past-event{
+  flex-direction: column-reverse;
+}
