@@ -44,7 +44,7 @@ export const OBMembers = [
 ];
 export const CCMembers = [
   {
-    name: "Mr. Meow",
+    name: "Satyam Mahajan",
     image: "../utils/images/img.png",
     designation: "Member",
     description: "fkjkl",
