@@ -1,4 +1,62 @@
-import { CCMembers } from "./memberData.js";
+import { CCMembers, OBMembers } from "./memberData.js";
+import { Projects } from "./memberProjects.js";
+
+function disablePrevButton(showcaseButtons) {
+  for (let i = 0; i < showcaseButtons.length; i++) {
+    let someButton = showcaseButtons[i];
+    if (someButton.getAttribute("value") == "white") {
+      someButton.setAttribute("value", "red");
+      for (let j = 0; j < someButton.children.length; j++) {
+        someButton.children[j].classList.add("white");
+        someButton.children[j].classList.remove("reddish");
+      }
+      someButton.style.background =
+        "linear-gradient(180deg, #E43B6E 5.72%, #FF8370 90.17%)";
+    }
+  }
+}
+function enableButton(showcaseButton) {
+  for (let i = 0; i < showcaseButton.children.length; i++) {
+    showcaseButton.children[i].classList.add("reddish");
+    showcaseButton.children[i].classList.remove("white");
+  }
+  showcaseButton.style.background = "white";
+  showcaseButton.setAttribute("value", "white");
+}
+
+function validClick(showcaseButton, showcaseButtons, showcaseImage, index) {
+  disablePrevButton(
+    showcaseButtons
+  ); /*Iterates through other buttons and deactivates previously active button */
+  enableButton(showcaseButton);
+  showcaseImage.style.backgroundImage = `url(${Projects[index].image})`; /* Update project image */
+  showcaseImage.classList.remove(
+    "showcase-change"
+  ); /*Image updation animation */
+  void showcaseImage.offsetWidth;
+  showcaseImage.classList.add("showcase-change");
+}
+
+function funShowcase() {
+  const showcaseButtons = document.querySelectorAll(".showcase-button");
+  const showcaseImage = document.querySelector(".showcase-image");
+  showcaseButtons.forEach((showcaseButton, index) => {
+    /*Displaying project details */
+    showcaseButton.children[0].innerHTML = Projects[index].name;
+    showcaseButton.children[1].innerHTML = Projects[index].title;
+    showcaseButton.addEventListener(
+      "click",
+      () => {
+        if (showcaseButton.getAttribute("value") == "red") {
+          /*Click is valid if button was red while clicking */
+          validClick(showcaseButton, showcaseButtons, showcaseImage, index);
+        }
+      },
+      false
+    );
+  });
+}
+funShowcase();
 
 /**
  * Creates a card for a given person and adds it to the `root` element
@@ -6,20 +64,52 @@ import { CCMembers } from "./memberData.js";
  * @param {HTMLDivElement} root element to which the card will be attached
  * @param {JSON} memberInfo details of the member
  * @param {string} circleColor color of circle around the image
+ * @param {boolean} isOB true if the the card is being created for OB
  */
-function createCard(root, memberInfo, circleColor) {
-  const { name, image, designation } = memberInfo;
+function createCard(root, memberInfo, circleColor, isOB = false) {
+  const { name, image, designation, description, socialLinks } = memberInfo;
   root.innerHTML += `
-  <div class="CCCard">
+  <div class="tile">
     <div
-      class="CCImgBg"
+      class="imgBg ${isOB ? "imgBg--large" : "imgBg--small"} popup-btn"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
-      <img class="CCImg" src="${image}" alt="${name}'s Picture" />
+      <img class="roundImg ${
+        isOB ? "img--large" : "img--small"
+      }" src="${image}" alt="${name}'s Picture" />
     </div>
-    <div class="white" style="font-size: 2vh">${name}</div>
-    <div class="grey" style="font-size: 1.5vh">${designation.toUpperCase()}</div>
-  </div>`;
+    <div class="white" style="font-size: ${isOB ? "4vh" : "2vh"}">${name}</div>
+    <div class="grey" style="font-size: ${
+      isOB ? "2.4vh" : "1.5vh"
+    }">${designation.toUpperCase()}</div>
+  </div>
+  <div class="popup-container">
+    <div class="description">
+    <div
+      class="imgBg imgBg--large"
+      style="background-image: url(./utils/images/${circleColor}_circle.svg)"
+    >
+      <img class="roundImg img--large" src="${image}" alt="${name}'s Picture" />
+    </div>
+      <div style="width: 35vw; text-align: left">
+        <div class="white" style="font-size: 3vw">
+          ${name}
+        </div>
+        <div class="reddish" style="font-size: 1.5vw">${designation.toUpperCase()}</div>
+        <div class="grey" style="padding-top: 3vh; font-size: 1rem">
+          ${description}
+        </div>
+        <div class="social">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
 }
 
 /**
@@ -28,15 +118,16 @@ function createCard(root, memberInfo, circleColor) {
  */
 function appendMembers() {
   const CCSection = document.getElementById("CC");
+  const rowSize = 5;
   let rowIndex = 0;
-  let index = 6;
+  let index = rowSize;
   let row = document.createElement("div");
   row.className = "CCRow";
   CCSection.appendChild(row);
-  while (CCMembers) {
+  while (CCMembers.length > 0) {
     if (index == 0) {
       rowIndex++;
-      index = rowIndex % 2 ? 5 : 6;
+      index = rowIndex % 2 ? rowSize - 1 : rowSize;
       row = document.createElement("div");
       row.className = "CCRow";
       CCSection.appendChild(row);
@@ -52,4 +143,54 @@ function appendMembers() {
   }
 }
 
+function appendOBs() {
+  const OBSection = document.getElementById("obs");
+  createCard(OBSection, OBMembers[0], "yellow", true);
+  createCard(OBSection, OBMembers[1], "red", true);
+  createCard(OBSection, OBMembers[2], "blue", true);
+}
+
+/**
+ * Show Popup
+ * @param {HTMLDivElement} popup
+ */
+function showPopup(popup) {
+  popup.classList.add("active");
+  toggleScroll();
+}
+
+/**
+ * Hide Popup
+ * @param {HTMLDivElemt} popup
+ */
+function hidePopup(popup) {
+  popup.classList.remove("active");
+  toggleScroll();
+}
+/**
+ * Toggle scroll (scrolling should be disabled when popup is open)
+ */
+function toggleScroll() {
+  document.body.classList.toggle("no-scroll");
+}
+
+appendOBs();
 appendMembers();
+
+const memberCards = document.querySelectorAll(".popup-btn");
+const popups = document.querySelectorAll(".popup-container");
+
+memberCards.forEach((card, index) =>
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    showPopup(popups[index]);
+  })
+);
+popups.forEach((popup, index) =>
+  popup.addEventListener("click", (e) => {
+    let target = e.target;
+    if (target.classList.contains("popup-container")) {
+      hidePopup(popups[index]);
+    } else return;
+  })
+);
