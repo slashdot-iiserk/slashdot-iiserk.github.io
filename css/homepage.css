@@ -39,11 +39,16 @@
 
 .heroSection {
   display: flex;
+  flex-direction: row;
 }
 
 .heroText {
   margin: 0 0 0 6vw;
   font-weight: 700;
+}
+
+.heroImg{
+  width: 62w;
 }
 
 .aboutCont {
@@ -184,6 +189,20 @@ body.no-scroll {
   height: 15vh;
   padding-left: 8px;
 }
+
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .heroImg{
+    width: 100vw;
+  }
+  
+  .heroSection{
+    flex-direction: column;
+  }
+  
 .showcase-change{
   animation-name: newshowcase;
   animation-duration: 1.2s;
