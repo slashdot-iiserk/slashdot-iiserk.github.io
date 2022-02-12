@@ -48,7 +48,8 @@
 }
 
 .heroImg {
-  width: 62w;
+  width: 54vw;
+  padding-right: 4vw;
 }
 
 .aboutCont {
@@ -194,12 +195,9 @@ body.no-scroll {
 }
 
 @media (max-width: 768px) {
-  .heroImg {
-    width: 100vw;
-  }
-
   .heroSection {
     flex-direction: column;
+    align-items: center;
   }
 }
 .showcase-change {
