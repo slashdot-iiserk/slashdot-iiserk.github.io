@@ -58,6 +58,21 @@ function funShowcase() {
 }
 funShowcase();
 
+function returnLinks(socialLinks) {
+  const linkKey = Object.keys(socialLinks);
+  var socialElement = ``;
+  linkKey.forEach((key, index) => {
+    // console.log(socialLinks[key]);
+    socialElement+=`
+    <div>
+      <a href='${socialLinks[key]}'>
+        <i class="fa fa-${key}" ></i>  
+      </a>
+    </div>`;
+  });
+  return socialElement;
+}
+
 /**
  * Creates a card for a given person and adds it to the `root` element
  *
@@ -68,6 +83,9 @@ funShowcase();
  */
 function createCard(root, memberInfo, circleColor, isOB = false) {
   const { name, image, designation, description, socialLinks } = memberInfo;
+  const linkKey = Object.keys(socialLinks);
+  // console.log(linkKey);
+  // console.log(socialLinks, typeof(socialLinks));
   root.innerHTML += `
   <div class="tile">
     <div
@@ -100,11 +118,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
           ${description}
         </div>
         <div class="social">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          ${returnLinks(socialLinks)}
         </div>
       </div>
     </div>

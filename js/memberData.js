@@ -15,10 +15,10 @@ export const OBMembers = [
   },
   {
     name: "Anurit Dey",
-    image: "../utils/images/img.png",
+    image: "../assets/Anurit Dey.jpg",
     designation: "Secretary",
     description:
-      "",
+      "Return to Monke.",
     socialLinks: {
       facebook: "https://www.facebook.com/",
       instagram: "https://www.instagram.com/",
@@ -29,7 +29,7 @@ export const OBMembers = [
   },
   {
     name: "Rohit Verma",
-    image: "../utils/images/img.png",
+    image: "../assets/Rohit Verma.jpg",
     designation: "Teasurer",
     description:
       "I'm a 2nd year undergraduate student, pursuing BS-MS integrated course at IISER Kolkata. I've a keen interest in theoretical physics and applied mathematics. Apart from that, I like to designing, and little coding.",
@@ -44,6 +44,20 @@ export const OBMembers = [
 ];
 export const CCMembers = [
   {
+    name: "Amarjeet Kumar",
+    image: "../assets/Amarjeet Kumar.jpg",
+    designation: "Member",
+    description:
+      "Amarjeet is a computer nerd who spends most of his waking hour in front of his laptop building all sorts of websites and apps. And he uses Arch BTW.",
+    socialLinks: {
+      // facebook: "https://www.facebook.com/",
+      // instagram: "https://www.instagram.com/",
+      linkedin: "https://www.linkedin.com/in/amarjeet-kumar-345880208/",
+      github: "https://github.com/MASTERAMARJEET",
+      twitter: "https://twitter.com/masteramarjeet",
+    },
+  },
+  {
     name: "Satyam Mahajan",
     image: "../assets/Sayantan Khan.jpg",
     designation: "Member",
@@ -52,6 +66,20 @@ export const CCMembers = [
       // facebook: "https://www.facebook.com/",
       instagram: "https://instagram.com/im_savii?utm_medium=copy_link",
       linkedin: "https://www.linkedin.com/in/satyam-mahajan-b844b6149",
+      // github: "https://www.github.com/",
+      // twitter: "https://www.twitter.com/",
+    },
+  },
+  {
+    name: "Sai Sagole",
+    image: "../assets/Sai Sunil Sagole.jpg",
+    designation: "Member",
+    description:
+      "",
+    socialLinks: {
+      facebook: "https://www.facebook.com/sai.sagole",
+      instagram: "https://www.instagram.com/_._saeeee_._/",
+      linkedin: "https://www.linkedin.com/in/sai-sagole-ab062a154",
       // github: "https://www.github.com/",
       // twitter: "https://www.twitter.com/",
     },
@@ -156,7 +184,7 @@ export const CCMembers = [
   },
   {
     name: "G P Hrishikesh",
-    image: "../assets/G. P. Hrishikesh.jpg",
+    image: "../assets/G. P Hrishikesh.jpg",
     designation: "Member",
     description:
       "Hey! I am Hrishikesh , II year undergrad student in IISER K. It has been great working in the Slashdot CC. Slashdot CC has given me an excellent platform to hone my web designing skills.",
@@ -183,34 +211,6 @@ export const CCMembers = [
     },
   },
   {
-    name: "Sai Sagole",
-    image: "../assets/Sai Sunil Sagole.jpg",
-    designation: "Member",
-    description:
-      "",
-    socialLinks: {
-      facebook: "https://www.facebook.com/sai.sagole",
-      instagram: "https://www.instagram.com/_._saeeee_._/",
-      linkedin: "https://www.linkedin.com/in/sai-sagole-ab062a154",
-      // github: "https://www.github.com/",
-      // twitter: "https://www.twitter.com/",
-    },
-  },
-  {
-    name: "Amarjeet Kumar",
-    image: "../assets/Amarjeet Kumar.jpg",
-    designation: "Member",
-    description:
-      "Amarjeet is a computer nerd who spends most of his waking hour in front of his laptop building all sorts of websites and apps. And he uses Arch BTW.",
-    socialLinks: {
-      // facebook: "https://www.facebook.com/",
-      // instagram: "https://www.instagram.com/",
-      linkedin: "https://www.linkedin.com/in/amarjeet-kumar-345880208/",
-      github: "https://github.com/MASTERAMARJEET",
-      twitter: "https://twitter.com/masteramarjeet",
-    },
-  },
-  {
     name: "Sri Sindhu Bhatta",
     image: "../assets/B Srisindhu.jpg",
     designation: "Member",
@@ -224,6 +224,7 @@ export const CCMembers = [
       // twitter: "https://www.twitter.com/",
     },
   },
+  /*
   {
     name: "Mr. Meow",
     image: "../utils/images/img.png",
@@ -238,4 +239,5 @@ export const CCMembers = [
       twitter: "https://www.twitter.com/",
     },
   },
+  */
 ];

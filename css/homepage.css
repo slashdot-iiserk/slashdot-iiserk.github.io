@@ -149,10 +149,13 @@ body.no-scroll {
 }
 
 .social div {
-  margin-top: 5%;
-  width: 40px;
-  height: 40px;
+  padding: 10px;
+  width: 2vh;
+  height: 2vh;
   background-color: #02b6d4;
+  text-align: center;
+  border-radius: 1vh;
+  font-size: 100%;
 }
 .CCRow {
   display: flex;
