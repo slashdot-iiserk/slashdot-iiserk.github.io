@@ -15,14 +15,12 @@
   position: absolute;
   width: 88vw;
 }
-
 .navOptionCont {
   display: flex;
   justify-content: space-between;
   width: 50vw;
   align-items: center;
 }
-
 .navOptions.active {
   background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
   padding: 1vh 2vh;
@@ -36,19 +34,20 @@
   width: inherit;
   height: 110vh;
 }
-
+.heroHeader {
+  height: 32vh;
+}
 .heroSection {
   display: flex;
   flex-direction: row;
 }
-
 .heroText {
-  margin: 0 0 0 6vw;
+  margin: 6vh 6vw;
   font-weight: 700;
+  width: 38vw;
 }
-
 .heroImg {
-  width: 54vw;
+  width: 50%;
   padding-right: 4vw;
 }
 
@@ -198,9 +197,24 @@ body.no-scroll {
 }
 
 @media (max-width: 768px) {
+  .heroHeader {
+    height: 20vh;
+  }
   .heroSection {
     flex-direction: column;
     align-items: center;
+  }
+  .heroText {
+    margin: 0 0 6vh 0;
+    width: 80%;
+    text-align: center;
+  }
+  .heroText div {
+    margin: auto;
+  }
+  .heroImg {
+    width: 80%;
+    padding: 0;
   }
 }
 .showcase-change {
