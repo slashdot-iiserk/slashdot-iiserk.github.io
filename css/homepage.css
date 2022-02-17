@@ -203,10 +203,10 @@ body.no-scroll {
   padding-left: 8px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .heroHeader {
     height: 20vh;
   }

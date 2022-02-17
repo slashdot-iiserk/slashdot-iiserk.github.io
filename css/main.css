@@ -36,7 +36,7 @@ button {
 
 /* --------version depending on screen width----------- */
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .desktop {
     display: inherit;
   }
@@ -46,7 +46,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .desktop {
     display: none;
   }
@@ -127,7 +127,7 @@ nav .icon-burger .line {
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   nav .logo {
     float: none;
     width: auto;
