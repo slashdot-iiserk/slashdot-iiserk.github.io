@@ -52,8 +52,18 @@
 }
 
 .aboutCont {
-  display: flex;
-  width: inherit;
+  display: grid;
+  margin: 0 3vmax;
+  align-items: center;
+  grid-gap: 4vw;
+  grid-template-columns: 1fr 1fr;
+}
+.aboutCont > * {
+  width: 45vw;
+}
+.aboutCont > img {
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 .teamCont {
@@ -215,6 +225,14 @@ body.no-scroll {
   .heroImg {
     width: 80%;
     padding: 0;
+  }
+
+  .aboutCont {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutCont > * {
+    width: 80%;
   }
 }
 .showcase-change {
