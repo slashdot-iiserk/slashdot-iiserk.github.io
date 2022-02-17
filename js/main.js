@@ -63,7 +63,7 @@ function returnLinks(socialLinks) {
   var socialElement = ``;
   linkKey.forEach((key, index) => {
     // console.log(socialLinks[key]);
-    socialElement+=`
+    socialElement += `
     <div>
       <a href='${socialLinks[key]}'>
         <i class="fa fa-${key}" ></i>  

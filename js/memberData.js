@@ -17,8 +17,7 @@ export const OBMembers = [
     name: "Anurit Dey",
     image: "../assets/Anurit Dey.jpg",
     designation: "Secretary",
-    description:
-      "Return to Monke.",
+    description: "Return to Monke.",
     socialLinks: {
       facebook: "https://www.facebook.com/",
       instagram: "https://www.instagram.com/",
@@ -61,7 +60,8 @@ export const CCMembers = [
     name: "Satyam Mahajan",
     image: "../assets/Sayantan Khan.jpg",
     designation: "Member",
-    description: "Currently a sophomore, an aspiring researcher exploring diverse flavors of Sciences. I have a keen enthusiasm for computation and data science which is my  ultimate motive for associating myself with Slashdot. Basically, I am a too lazy person to move around so I like doing random stuffs on my laptop which requires little to zero physical motion XD.",
+    description:
+      "Currently a sophomore, an aspiring researcher exploring diverse flavors of Sciences. I have a keen enthusiasm for computation and data science which is my  ultimate motive for associating myself with Slashdot. Basically, I am a too lazy person to move around so I like doing random stuffs on my laptop which requires little to zero physical motion XD.",
     socialLinks: {
       // facebook: "https://www.facebook.com/",
       instagram: "https://instagram.com/im_savii?utm_medium=copy_link",
@@ -74,8 +74,7 @@ export const CCMembers = [
     name: "Sai Sagole",
     image: "../assets/Sai Sunil Sagole.jpg",
     designation: "Member",
-    description:
-      "",
+    description: "",
     socialLinks: {
       facebook: "https://www.facebook.com/sai.sagole",
       instagram: "https://www.instagram.com/_._saeeee_._/",
@@ -103,10 +102,11 @@ export const CCMembers = [
     image: "../assets/Soumyajit Datta.jpg",
     designation: "Member",
     description:
-      "I am currently in 2nd year at IISER Kolkata. I joined Slashdot CC because I like designing and coding and I wanted to contribute to the club. I design posters of slashshorts which is a weekly series of \"shorts tricks and tips of coding\".",
+      'I am currently in 2nd year at IISER Kolkata. I joined Slashdot CC because I like designing and coding and I wanted to contribute to the club. I design posters of slashshorts which is a weekly series of "shorts tricks and tips of coding".',
     socialLinks: {
       facebook: "https://www.facebook.com/soumyajit.datta.73",
-      instagram: "https://www.instagram.com/invites/contact/?i=ng2xamnfkjsd&utm_content=kie70dh",
+      instagram:
+        "https://www.instagram.com/invites/contact/?i=ng2xamnfkjsd&utm_content=kie70dh",
       linkedin: "https://www.linkedin.com/in/soumyajit-datta",
       // github: "https://www.github.com/",
       // twitter: "https://www.twitter.com/",
@@ -191,7 +191,8 @@ export const CCMembers = [
     socialLinks: {
       // facebook: "https://www.facebook.com/",
       instagram: "https://www.instagram.com/gp_hrishi/",
-      linkedin: "https://www.linkedin.com/in/g-p-hrishikesh-84086714b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqWMJ1ZjARbSQEkHXxdoO1Q%3D%3D",
+      linkedin:
+        "https://www.linkedin.com/in/g-p-hrishikesh-84086714b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqWMJ1ZjARbSQEkHXxdoO1Q%3D%3D",
       github: "https://github.com/gphrishi",
       // twitter: "https://www.twitter.com/",
     },
