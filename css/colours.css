@@ -22,3 +22,28 @@
 .orangishLite {
   color: #f8c206;
 }
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.bluishGrey-bg {
+  background-color: #02b6d4;
+}
+
+.grey-bg {
+  background-color: #9e9e9e;
+}
+
+.reddish-bg {
+  background-color: #e53b6e;
+}
+
+.orangish-bg {
+  background-color: #fc7701;
+}
+
+/* lite versi0n XD */
+.orangishLite-bg {
+  background-color: #f8c206;
+}
