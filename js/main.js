@@ -10,8 +10,7 @@ function disablePrevButton(showcaseButtons) {
         someButton.children[j].classList.add("white");
         someButton.children[j].classList.remove("reddish");
       }
-      someButton.style.background =
-        "linear-gradient(180deg, #E43B6E 5.72%, #FF8370 90.17%)";
+      someButton.style.backgroundColor = "transparent";
     }
   }
 }
