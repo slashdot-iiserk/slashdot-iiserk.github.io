@@ -95,9 +95,11 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
         isOB ? "img--large" : "img--small"
       }" src="${image}" alt="${name}'s Picture" />
     </div>
-    <div class="white" style="font-size: ${isOB ? "4vh" : "2vh"}">${name}</div>
+    <div class="white" style="font-size: ${
+      isOB ? "4vmin" : "2vmin"
+    }">${name}</div>
     <div class="grey" style="font-size: ${
-      isOB ? "2.4vh" : "1.5vh"
+      isOB ? "2.4vmin" : "1.5vmin"
     }">${designation.toUpperCase()}</div>
   </div>
   <div class="popup-container">
@@ -131,7 +133,8 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
  */
 function appendMembers() {
   const CCSection = document.getElementById("CC");
-  const rowSize = 5;
+  const body = getComputedStyle(document.body);
+  const rowSize = parseInt(body.getPropertyValue("--row-size"));
   let rowIndex = 0;
   let index = rowSize;
   let row = document.createElement("div");
