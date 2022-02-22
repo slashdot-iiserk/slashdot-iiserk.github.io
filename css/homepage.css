@@ -203,7 +203,6 @@ body {
   z-index: 9998;
   opacity: 0;
   pointer-events: none;
-  padding: 10px 20px;
   transition: opacity 0.3s ease-in-out;
 }
 .popup-container.active {
@@ -222,7 +221,10 @@ body.no-scroll {
   background-color: #272727;
   padding: 3rem;
   border-radius: 10px;
-  /* pointer-events: none; */
+}
+.description-txt {
+  width: 35vw;
+  text-align: left;
 }
 
 .social {
@@ -355,6 +357,18 @@ body.no-scroll {
     padding: 0;
     grid-gap: 10vw;
     margin-bottom: -5%;
+  }
+  .description {
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem 0;
+  }
+  .description-txt {
+    width: 90%;
+    text-align: center;
+  }
+  .social {
+    justify-content: center;
   }
 }
 .showcase-change {

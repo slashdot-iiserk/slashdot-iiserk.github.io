@@ -110,12 +110,12 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
     >
       <img class="roundImg img--large" src="${image}" alt="${name}'s Picture" />
     </div>
-      <div style="width: 35vw; text-align: left">
-        <div class="white" style="font-size: 3vw">
+      <div class="description-txt">
+        <div class="white" style="font-size: 3vmax">
           ${name}
         </div>
-        <div class="reddish" style="font-size: 1.5vw">${designation.toUpperCase()}</div>
-        <div class="grey" style="padding-top: 3vh; font-size: 1rem">
+        <div class="reddish" style="font-size: 1.5vmax">${designation.toUpperCase()}</div>
+        <div class="grey" style="padding-top: 3vh; font-size: 1.5vmax">
           ${description}
         </div>
         <div class="social">
