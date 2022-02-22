@@ -64,7 +64,7 @@ function returnLinks(socialLinks) {
     // console.log(socialLinks[key]);
     socialElement += `
     <div>
-      <a href='${socialLinks[key]}'>
+      <a href='${socialLinks[key]}' target="_blank" rel="noopener noreferrer">
         <i class="fa fa-${key}" ></i>  
       </a>
     </div>`;
