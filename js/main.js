@@ -61,7 +61,6 @@ function returnLinks(socialLinks) {
   const linkKey = Object.keys(socialLinks);
   var socialElement = ``;
   linkKey.forEach((key, index) => {
-    // console.log(socialLinks[key]);
     socialElement += `
     <div>
       <a href='${socialLinks[key]}' target="_blank" rel="noopener noreferrer">
@@ -104,6 +103,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
   </div>
   <div class="popup-container">
     <div class="description">
+      <i class="fa fa-times close-me white"></i>
     <div
       class="imgBg imgBg--large"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
@@ -195,6 +195,7 @@ appendMembers();
 
 const memberCards = document.querySelectorAll(".popup-btn");
 const popups = document.querySelectorAll(".popup-container");
+const popupClosers = document.querySelectorAll(".close-me");
 
 memberCards.forEach((card, index) =>
   card.addEventListener("click", (e) => {
@@ -204,8 +205,16 @@ memberCards.forEach((card, index) =>
 );
 popups.forEach((popup, index) =>
   popup.addEventListener("click", (e) => {
-    let target = e.target;
+    const target = e.target;
     if (target.classList.contains("popup-container")) {
+      hidePopup(popups[index]);
+    } else return;
+  })
+);
+popupClosers.forEach((closeBtn, index) =>
+  closeBtn.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target.parentNode.parentNode.classList.contains("popup-container")) {
       hidePopup(popups[index]);
     } else return;
   })

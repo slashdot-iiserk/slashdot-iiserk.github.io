@@ -213,6 +213,7 @@ body.no-scroll {
   overflow-y: hidden;
 }
 .description {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,6 +226,12 @@ body.no-scroll {
 .description-txt {
   width: 35vw;
   text-align: left;
+}
+.close-me {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3em !important;
 }
 
 .social {
@@ -366,6 +373,9 @@ body.no-scroll {
   .description-txt {
     width: 90%;
     text-align: center;
+  }
+  .close-me {
+    font-size: 2em !important;
   }
   .social {
     justify-content: center;
