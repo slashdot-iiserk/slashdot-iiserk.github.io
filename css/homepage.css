@@ -167,24 +167,24 @@ body {
   justify-content: center;
 }
 .imgBg--large {
-  width: 24vw;
-  height: 24vw;
+  width: 24vmax;
+  height: 24vmax;
 }
 .imgBg--small {
-  width: 15vw;
-  height: 15vw;
+  width: 15vmax;
+  height: 15vmax;
 }
 
 .roundImg {
   border-radius: 50%;
 }
 .img--large {
-  width: 16vw;
-  height: 16vw;
+  width: 16vmax;
+  height: 16vmax;
 }
 .img--small {
-  width: 10vw;
-  height: 10vw;
+  width: 10vmax;
+  height: 10vmax;
 }
 
 .popup-btn {
@@ -222,7 +222,7 @@ body.no-scroll {
   background-color: #272727;
   padding: 3rem;
   border-radius: 10px;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .social {
@@ -258,6 +258,9 @@ body.no-scroll {
 }
 
 @media (max-width: 900px) {
+  body {
+    --row-size: 3;
+  }
   .heroCont {
     height: 100vh;
   }
@@ -320,7 +323,7 @@ body.no-scroll {
 }
 @media (max-width: 500px) {
   body {
-    --row-size: 4;
+    --row-size: 2;
   }
   .about > * {
     width: 80vw;
@@ -343,6 +346,15 @@ body.no-scroll {
   .team-middle-spacer,
   .team-bottom-spacer {
     height: 8vh;
+  }
+  .OBS {
+    flex-direction: column;
+    grid-gap: 4vh;
+  }
+  .CCRow {
+    padding: 0;
+    grid-gap: 10vw;
+    margin-bottom: -5%;
   }
 }
 .showcase-change {
