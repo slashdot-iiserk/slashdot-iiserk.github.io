@@ -74,7 +74,7 @@ export const CCMembers = [
     name: "Sai Sagole",
     image: "../assets/Sai Sunil Sagole.jpg",
     designation: "Member",
-    description: "",
+    description: "Hello! I am a 3rd-year undergrad majoring in Biology. Movies and art are my get away from reality. I am always interested in learning and getting to know about new things (not a nerd); hence joined SlashDot CC!",
     socialLinks: {
       facebook: "https://www.facebook.com/sai.sagole",
       instagram: "https://www.instagram.com/_._saeeee_._/",
