@@ -17,7 +17,7 @@ export const OBMembers = [
     name: "Anurit Dey",
     image: "../assets/Anurit Dey.jpg",
     designation: "Secretary",
-    description: "Return to Monke.",
+    description: "Hey, I am a 3rd year BSMS student, and currently the Secretary of SlashDot. Machine Learning and Data Sciences are my interest areas. SlashDot as a club is relatively new which opens up the opportunity to build the club from scratch, to lay the foundations of the club. This was one of my major reasons behind joining the club. You can find me either playing badminton or at the RC Lake with some chai and  toast listening to \"When Chai Met Toast\".",
     socialLinks: {
       facebook: "https://www.facebook.com/",
       instagram: "https://www.instagram.com/",
