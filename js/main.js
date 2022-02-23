@@ -10,8 +10,7 @@ function disablePrevButton(showcaseButtons) {
         someButton.children[j].classList.add("white");
         someButton.children[j].classList.remove("reddish");
       }
-      someButton.style.background =
-        "linear-gradient(180deg, #E43B6E 5.72%, #FF8370 90.17%)";
+      someButton.style.backgroundColor = "transparent";
     }
   }
 }
@@ -58,6 +57,20 @@ function funShowcase() {
 }
 funShowcase();
 
+function returnLinks(socialLinks) {
+  const linkKey = Object.keys(socialLinks);
+  var socialElement = ``;
+  linkKey.forEach((key, index) => {
+    socialElement += `
+    <div>
+      <a href='${socialLinks[key]}' target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-${key}" ></i>  
+      </a>
+    </div>`;
+  });
+  return socialElement;
+}
+
 /**
  * Creates a card for a given person and adds it to the `root` element
  *
@@ -68,6 +81,9 @@ funShowcase();
  */
 function createCard(root, memberInfo, circleColor, isOB = false) {
   const { name, image, designation, description, socialLinks } = memberInfo;
+  const linkKey = Object.keys(socialLinks);
+  // console.log(linkKey);
+  // console.log(socialLinks, typeof(socialLinks));
   root.innerHTML += `
   <div class="tile">
     <div
@@ -78,33 +94,32 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
         isOB ? "img--large" : "img--small"
       }" src="${image}" alt="${name}'s Picture" />
     </div>
-    <div class="white" style="font-size: ${isOB ? "4vh" : "2vh"}">${name}</div>
+    <div class="white" style="font-size: ${
+      isOB ? "4vmin" : "2vmin"
+    }">${name}</div>
     <div class="grey" style="font-size: ${
-      isOB ? "2.4vh" : "1.5vh"
+      isOB ? "2.4vmin" : "1.5vmin"
     }">${designation.toUpperCase()}</div>
   </div>
   <div class="popup-container">
     <div class="description">
+      <i class="fa fa-times close-me white"></i>
     <div
       class="imgBg imgBg--large"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
       <img class="roundImg img--large" src="${image}" alt="${name}'s Picture" />
     </div>
-      <div style="width: 35vw; text-align: left">
-        <div class="white" style="font-size: 3vw">
+      <div class="description-txt">
+        <div class="white" style="font-size: 3vmax">
           ${name}
         </div>
-        <div class="reddish" style="font-size: 1.5vw">${designation.toUpperCase()}</div>
-        <div class="grey" style="padding-top: 3vh; font-size: 1rem">
+        <div class="reddish" style="font-size: 1.5vmax">${designation.toUpperCase()}</div>
+        <div class="grey" style="padding-top: 3vh; font-size: 1.5vmax">
           ${description}
         </div>
         <div class="social">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          ${returnLinks(socialLinks)}
         </div>
       </div>
     </div>
@@ -118,7 +133,8 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
  */
 function appendMembers() {
   const CCSection = document.getElementById("CC");
-  const rowSize = 5;
+  const body = getComputedStyle(document.body);
+  const rowSize = parseInt(body.getPropertyValue("--row-size"));
   let rowIndex = 0;
   let index = rowSize;
   let row = document.createElement("div");
@@ -179,6 +195,7 @@ appendMembers();
 
 const memberCards = document.querySelectorAll(".popup-btn");
 const popups = document.querySelectorAll(".popup-container");
+const popupClosers = document.querySelectorAll(".close-me");
 
 memberCards.forEach((card, index) =>
   card.addEventListener("click", (e) => {
@@ -188,8 +205,16 @@ memberCards.forEach((card, index) =>
 );
 popups.forEach((popup, index) =>
   popup.addEventListener("click", (e) => {
-    let target = e.target;
+    const target = e.target;
     if (target.classList.contains("popup-container")) {
+      hidePopup(popups[index]);
+    } else return;
+  })
+);
+popupClosers.forEach((closeBtn, index) =>
+  closeBtn.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target.parentNode.parentNode.classList.contains("popup-container")) {
       hidePopup(popups[index]);
     } else return;
   })

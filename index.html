@@ -11,99 +11,100 @@
     <link rel="stylesheet" href="./css/homepage.css" />
     <link rel="stylesheet" href="./css/allFonts.css" />
     <link rel="stylesheet" href="./css/colours.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script defer type="module" src="./js/main.js"></script>
   </head>
+
   <body>
     <!-- desktop version -->
     <div class="homepage">
       <!-- navbar -->
       <div class="desktop">
-				<div class="navbar">
-					<div>
-						<img class="navLogo" src="../utils/images/logo.svg" alt="" />
-					</div>
-					<div class="navOptionCont white">
-						<div class="navOptions active" onclick="navclick('navHome')" id="navHome">
-							<a href="/">HOME</a>
-						</div>
-						<div class="navOptions" onclick="navclick('navAbout')" id="navAbout">
-							<a href="/#about">ABOUT US</a>
-						</div>
-						<div class="navOptions" onclick="navclick('navShowcase')" id="navShowcase">
-							<a href="/nav/showcase.html">SHOWCASE</a>
-						</div>
-						<div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
-							<a href="/#team">TEAM</a>
-						</div>
-					</div>
-				</div>
-			</div>
+        <div class="navbar">
+          <div>
+            <img class="navLogo" src="../utils/images/logo.svg" alt="" />
+          </div>
+          <div class="navOptionCont white">
+            <div
+              class="navOptions active"
+              onclick="navclick('navHome')"
+              id="navHome"
+            >
+              <a href="/">HOME</a>
+            </div>
+            <div
+              class="navOptions"
+              onclick="navclick('navAbout')"
+              id="navAbout"
+            >
+              <a href="/#about">ABOUT US</a>
+            </div>
+            <div
+              class="navOptions"
+              onclick="navclick('navShowcase')"
+              id="navShowcase"
+            >
+              <a href="/nav/showcase.html">SHOWCASE</a>
+            </div>
+            <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
+              <a href="/#team">TEAM</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- spacer -->
 
       <!-- hero section -->
       <div class="heroCont" id="home">
-        <div style="height: 32vh"></div>
+        <div class="heroHeader"></div>
 
         <div class="heroSection">
-          <div class="heroText" style="width: 38vw; padding: 6vh 0 0 0">
-            <div class="white" style="font-size: 5vh; letter-spacing: 10px">
+          <div class="heroText">
+            <div
+              class="white"
+              style="
+                font-size: 3.5vmax;
+                letter-spacing: 10px;
+                white-space: nowrap;
+              "
+            >
               WELCOME TO
             </div>
             <div
               class="bluishGrey"
-              style="font-size: 6vh; letter-spacing: 16px; font-weight: 800"
+              style="font-size: 4vmax; letter-spacing: 16px; font-weight: 800"
             >
               SLASHDOT
             </div>
             <div
               class="grey"
-              style="letter-spacing: 4px; width: 24vw; padding: 2vh 0 0 0"
+              style="letter-spacing: 4px; width: 80%; padding: 2vh 0"
             >
               THE CODING AND DESIGNING CLUB OF IISER KOLKATA
             </div>
           </div>
-          <div class="heroImg">
-            <img src="./utils/images/section1.svg" alt="" style="width: 54vw" />
-          </div>
+          <img src="./utils/images/section1.svg" alt="" class="heroImg" />
         </div>
       </div>
       <!-- about section -->
-      <div style="height: 12vh"></div>
+      <div class="about-spacer"></div>
 
-      <div class="aboutCont" id="about">
-        <div style="width: 50vw">
-          <img src="./utils/images/section2.svg" alt="" style="width: 44vw" />
+      <div id="about">
+        <div class="reddish section-heading">
+          <div class="reddish-bg section-heading-line"></div>
+          &nbsp&nbsp&nbspABOUT&nbspUS&nbsp&nbsp&nbsp
+          <div class="reddish-bg section-heading-line"></div>
         </div>
-        <div style="width: 38vw; padding: 0 6vw 0 0">
-          <div
-            class="reddish"
-            style="
-              display: flex;
-              align-items: center;
-              font-size: 3vh;
-              font-weight: 700;
-              letter-spacing: 4px;
-            "
-          >
-            <div
-              style="height: 4px; width: 100px; background-color: #e53b6e"
-            ></div>
-            &nbsp &nbsp &nbsp ABOUT US
-          </div>
-          <div
-            style="
-              font-size: 5vh;
-              font-weight: 800;
-              letter-spacing: 4px;
-              padding: 3vh 0;
-            "
-          >
-            EXPLAIN ABOUT OF
+        <div class="about">
+          <div class="section-header-txt about-header">
+            EXPLAIN ABOUT
             <font class="bluishGrey">SLASHDOT</font> IN ONE OR TWO LINES
           </div>
-          <div style="font-size: 2.7vh; font-weight: 500">
+          <div style="" class="about-content">
             This is some random text. Chances are good that there's a cloud
             software as a service solution on the market today that will serve
             your core back-office needs. Many of those products offer the
@@ -112,168 +113,108 @@
             a service solution on the market today that will serve your core
             back-office needs.
           </div>
+          <img src="./utils/images/section2.svg" alt="" />
         </div>
       </div>
       <!-- showcase -->
-      <div id="showcase">
-        <div style="height: 16vh"></div>
-        <div
-          class="bluishGrey"
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3vh;
-            font-weight: 700;
-            letter-spacing: 4px;
-          "
-        >
-          <div
-            style="height: 4px; width: 100px; background-color: #02b6d4"
-          ></div>
-          &nbsp &nbsp &nbsp SHOWCASE &nbsp &nbsp &nbsp
-          <div
-            style="height: 4px; width: 100px; background-color: #02b6d4"
-          ></div>
+      <div class="showcase-spacer"></div>
+      <div id="showcase" class="showcase">
+        <div class="bluishGrey section-heading" style="">
+          <div class="bluishGrey-bg section-heading-line"></div>
+          &nbsp&nbsp&nbspSHOWCASE&nbsp&nbsp&nbsp
+          <div class="bluishGrey-bg section-heading-line"></div>
         </div>
-        <div style="height: 12vh"></div>
         <div class="showcaseCont">
-          <div style="display: flex; flex-direction: column">
-            <div style="width: 32vw; padding: 2vh 0 0 6vw">
-              <div class="highlightsTxt">
-                SOME
-                <font class="orangishLite"> HIGHLIGHTED </font>
-                PROJECTS MADE BY THE TEAM
-              </div>
-            </div>
-            <div
-              class="showcase-buttons"
-              style="border: 2px solid #e43b6e; border-radius: 15px"
-            >
-              <div
-                class="showcase-button"
-                value="red"
-                style="
-                  background: linear-gradient(
-                    180deg,
-                    #e43b6e 5.72%,
-                    #ff8370 90.17%
-                  );
-                  border-radius: 15px 15px 0 0;
-                "
-              >
-                <div class="white">Name</div>
-                <div class="white">TITLE</div>
-              </div>
-              <div
-                class="showcase-button"
-                value="white"
-                style="background: white"
-              >
-                <div class="reddish">Name</div>
-                <div class="reddish">TITLE</div>
-              </div>
-              <div
-                class="showcase-button"
-                value="red"
-                style="
-                  background: linear-gradient(
-                    180deg,
-                    #e43b6e 5.72%,
-                    #ff8370 90.17%
-                  );
-                  border-radius: 0 0 15px 15px;
-                "
-              >
-                <div class="white">Name</div>
-                <div class="white">TITLE</div>
-              </div>
-            </div>
+          <div class="section-header-txt">
+            SOME
+            <font class="orangishLite"> HIGHLIGHTED </font>
+            PROJECTS MADE BY THE TEAM
           </div>
           <div
             class="showcase-image"
             style="background-image: url(./utils/images/projects/project_b.png)"
           ></div>
+          <div class="showcase-buttons">
+            <div class="showcase-button" value="red">
+              <div class="white">Name</div>
+              <div class="white">TITLE</div>
+            </div>
+            <div
+              class="showcase-button"
+              value="white"
+              style="background: white"
+            >
+              <div class="reddish">Name</div>
+              <div class="reddish">TITLE</div>
+            </div>
+            <div class="showcase-button" value="red">
+              <div class="white">Name</div>
+              <div class="white">TITLE</div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- meet the team -->
       <!-- spacer -->
       <div style="height: 12vh"></div>
       <div class="teamCont" id="team">
-        <div style="height: 10vh"></div>
-        <div
-          class="orangish"
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3vh;
-            font-weight: 700;
-            letter-spacing: 4px;
-          "
-        >
-          <div
-            style="height: 4px; width: 100px; background-color: #fc7701"
-          ></div>
-          &nbsp &nbsp &nbsp MEET THE TEAM &nbsp &nbsp &nbsp
-          <div
-            style="height: 4px; width: 100px; background-color: #fc7701"
-          ></div>
+        <div class="team-top-spacer"></div>
+        <div class="orangish section-heading">
+          <div class="orangish-bg section-heading-line"></div>
+          &nbsp&nbsp&nbspMEET THE TEAM&nbsp&nbsp&nbsp
+          <div class="orangish-bg section-heading-line"></div>
         </div>
-        <div style="height: 10vh"></div>
-        <div class="white teamTxt">OFFICE BEARERS</div>
+        <div class="white section-header-txt">OFFICE BEARERS</div>
         <!-- OBs -->
         <div class="OBS" id="obs">
           <!-- Card for each ob is added here using javascript. -->
         </div>
 
-        <div style="height: 16vh"></div>
+        <div class="team-middle-spacer"></div>
 
-        <div class="white teamTxt">CORE COMMITTEE</div>
-
-        <div style="height: 0vh"></div>
+        <div class="white section-header-txt">CORE COMMITTEE</div>
 
         <!-- CC -->
         <div id="CC">
           <!-- Card for each member is added here using javascript. -->
         </div>
 
-        <div style="height: 16vh"></div>
+        <div class="team-bottom-spacer"></div>
       </div>
     </div>
     <!-- full page info abt team member -->
-    
 
     <!-- mobile version -->
-      <!-- navbar phone -->
-				<div class="phone">
-					<nav>
-						<img class="navLogo" src="../utils/images/logo.svg" alt="" />
+    <!-- navbar phone -->
+    <div class="phone">
+      <nav>
+        <img class="navLogo" src="../utils/images/logo.svg" alt="" />
 
-						<input id="nav-toggle" type="checkbox">
-						<ul class="links">
-							<div class="navOptions" onclick="navclick('navHome')" id="navHome">
-								<a href="/">HOME</a>
-							</div>
-							<div class="navOptions" onclick="navclick('navAbout')" id="navAbout">
-								<a href="./about.html">ABOUT US</a>
-							</div>
-							<div class="navOptions active" onclick="navclick('navShowcase')" id="navShowcase">
-								<a href="/nav/showcase.html">SHOWCASE</a>
-							</div>
-							<div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
-								<a href="./team.html">TEAM</a>
-							</div>
-						</ul>
-						<label for="nav-toggle" class="icon-burger">
-							<div class="line"></div>
-							<div class="line"></div>
-							<div class="line"></div>
-						</label>
-					</nav>
-				</div>
-
-
-
+        <input id="nav-toggle" type="checkbox" />
+        <ul class="links">
+          <div class="navOptions" onclick="navclick('navHome')" id="navHome">
+            <a href="/">HOME</a>
+          </div>
+          <div class="navOptions" onclick="navclick('navAbout')" id="navAbout">
+            <a href="./about.html">ABOUT US</a>
+          </div>
+          <div
+            class="navOptions active"
+            onclick="navclick('navShowcase')"
+            id="navShowcase"
+          >
+            <a href="/nav/showcase.html">SHOWCASE</a>
+          </div>
+          <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
+            <a href="./team.html">TEAM</a>
+          </div>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    </div>
   </body>
 </html>

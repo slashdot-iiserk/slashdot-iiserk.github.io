@@ -32,7 +32,7 @@
 .navbarBg {
   background-image: url(../utils/images/bg1.svg);
   width: inherit;
-	height: 16.5vh;
+  height: 16.5vh;
 }
 
 .hero-text {
@@ -54,11 +54,10 @@
 } */
 
 .projectRow {
-	/* margin: 0 -5px; */
-	padding: 35px;
-	display: flex;
+  /* margin: 0 -5px; */
+  padding: 35px;
+  display: flex;
 }
-
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -66,9 +65,9 @@
   margin: 2vh;
   text-align: center;
   background-color: #212121;
-	color: #FFFFFF;
-	border-radius: 25px;
-	/* height: 90vh; */
+  color: #ffffff;
+  border-radius: 25px;
+  /* height: 90vh; */
   min-height: 70vh;
   max-height: 90vh;
   width: min(600px, 100%);
@@ -80,7 +79,7 @@
   font-size: 30px;
   line-height: 55px;
   letter-spacing: 0.2em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .projectImg {
