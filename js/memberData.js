@@ -19,11 +19,11 @@ export const OBMembers = [
     designation: "Secretary",
     description: "Hey, I am a 3rd year BSMS student, and currently the Secretary of SlashDot. Machine Learning and Data Sciences are my interest areas. SlashDot as a club is relatively new which opens up the opportunity to build the club from scratch, to lay the foundations of the club. This was one of my major reasons behind joining the club. You can find me either playing badminton or at the RC Lake with some chai and  toast listening to \"When Chai Met Toast\".",
     socialLinks: {
-      facebook: "https://www.facebook.com/",
-      instagram: "https://www.instagram.com/",
-      linkedin: "https://www.linkedin.com/",
-      github: "https://www.github.com/",
-      twitter: "https://www.twitter.com/",
+      facebook: "https://www.facebook.com/profile.php?id=100008044998540",
+      instagram: "https://www.instagram.com/anurit_dey/",
+      linkedin: "https://www.linkedin.com/in/anurit-dey-7b709a1a7/",
+      // github: "https://www.github.com/",
+      // twitter: "https://www.twitter.com/",
     },
   },
   {
@@ -58,7 +58,7 @@ export const CCMembers = [
   },
   {
     name: "Satyam Mahajan",
-    image: "../assets/Sayantan Khan.jpg",
+    image: "../assets/Satyam Mahajan.png",
     designation: "Member",
     description:
       "Currently a sophomore, an aspiring researcher exploring diverse flavors of Sciences. I have a keen enthusiasm for computation and data science which is my  ultimate motive for associating myself with Slashdot. Basically, I am a too lazy person to move around so I like doing random stuffs on my laptop which requires little to zero physical motion XD.",

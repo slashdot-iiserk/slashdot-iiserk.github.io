@@ -70,9 +70,13 @@ body {
 .section-header-txt {
   font-size: 4vmin;
   font-weight: 800;
+  text-align: left;
+}
+.section-header-txt-team {
+  font-size: 4vmin;
+  font-weight: 800;
   text-align: center;
 }
-
 .about-spacer {
   height: 12vh;
 }
