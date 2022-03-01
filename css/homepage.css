@@ -185,10 +185,12 @@ body {
 .img--large {
   width: 16vmax;
   height: 16vmax;
+  object-fit: cover;
 }
 .img--small {
   width: 10vmax;
   height: 10vmax;
+  object-fit: cover;
 }
 
 .popup-btn {
