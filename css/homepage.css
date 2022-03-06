@@ -1,5 +1,11 @@
 body {
   --row-size: 5;
+  --navLogo-load-time: 300ms;
+  --navLogo-load-delay: 200ms;
+  --navbar-load-time: 300ms;
+  --navbar-load-delay: 200ms;
+  --navOptions-load-time: 500ms;
+  --navOptions-load-delay: calc(var(--navbar-load-time) + var(--navbar-load-delay));
 }
 .homepage {
   width: 100vw;
@@ -8,6 +14,10 @@ body {
 .navLogo {
   width: 8vh;
   cursor: pointer;
+  animation: navLogo-load var(--navLogo-load-time) ease-in var(--navLogo-load-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(0);
+  opacity: 0;
 }
 
 .navbar {
@@ -16,6 +26,7 @@ body {
   justify-content: space-between;
   position: absolute;
   width: 88vw;
+  animation: navbar-load var(--navLogo-load-time) ease-out var(--navLogo-load-delay);
 }
 .navOptionCont {
   display: flex;
@@ -23,12 +34,53 @@ body {
   width: 50vw;
   align-items: center;
 }
-.navOptions.active {
-  background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
+.navOptions {
   padding: 1vh 2vh;
   border-radius: 10px;
+  animation: navOption-load var(--navOptions-load-time) ease-in var(--navOptions-load-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(0);
+  opacity: 0;
+}
+.navOptions:hover {
+  background-color: #FFFFFF45;
+}
+.navOptions:active {
+  background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
 }
 
+@keyframes navbar-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes navOption-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+
+@keyframes navLogo-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
 .heroCont {
   background-repeat: no-repeat;
   background-image: url(../utils/images/bg1.svg);
