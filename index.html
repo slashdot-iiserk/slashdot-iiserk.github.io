@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="./utils/images/logo.svg" />
-    <title>/.</title>
+    <title>SlashDot Website</title>
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/homepage.css" />
     <link rel="stylesheet" href="./css/allFonts.css" />
     <link rel="stylesheet" href="./css/colours.css" />
+    <!-- ANIMATE CSS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,7 +25,7 @@
     <div class="homepage">
       <!-- navbar -->
       <div class="desktop">
-        <div class="navbar">
+        <div class="navbar animate__animated animate__fadeInDown">
           <div>
             <img class="navLogo" src="../utils/images/logo.svg" alt="" />
           </div>
@@ -63,7 +65,7 @@
         <div class="heroHeader"></div>
 
         <div class="heroSection">
-          <div class="heroText">
+          <div class="heroText animate__animated wow animate__fadeInLeft">
             <div
               class="white"
               style="
@@ -87,24 +89,24 @@
               THE CODING AND DESIGNING CLUB OF IISER KOLKATA
             </div>
           </div>
-          <img src="./utils/images/section1.svg" alt="" class="heroImg" />
+            <img class="heroImg animate__animated wow animate__zoomIn"  src="./utils/images/section1.svg" alt="" />
         </div>
       </div>
       <!-- about section -->
       <div class="about-spacer"></div>
 
       <div id="about">
-        <div class="reddish section-heading">
+        <div class="reddish section-heading animate__animated wow animate__fadeInUp">
           <div class="reddish-bg section-heading-line"></div>
           &nbsp&nbsp&nbspABOUT&nbspUS&nbsp&nbsp&nbsp
           <div class="reddish-bg section-heading-line"></div>
         </div>
         <div class="about">
-          <div class="section-header-txt about-header">
+          <div class="section-header-txt about-header animate__animated wow animate__fadeInRight">
             EXPLAIN ABOUT
             <font class="bluishGrey">SLASHDOT</font> IN ONE OR TWO LINES
           </div>
-          <div style="" class="about-content">
+          <div class="about-content animate__animated wow animate__fadeInRight">
             This is some random text. Chances are good that there's a cloud
             software as a service solution on the market today that will serve
             your core back-office needs. Many of those products offer the
@@ -113,41 +115,47 @@
             a service solution on the market today that will serve your core
             back-office needs.
           </div>
-          <img src="./utils/images/section2.svg" alt="" />
+          <img class="animate__animated wow animate__fadeInLeft" src="./utils/images/section2.svg" alt="" />
         </div>
       </div>
       <!-- showcase -->
       <div class="showcase-spacer"></div>
       <div id="showcase" class="showcase">
-        <div class="bluishGrey section-heading" style="">
+        <div class="bluishGrey section-heading animate__animated wow animate__fadeInDown style="">
           <div class="bluishGrey-bg section-heading-line"></div>
           &nbsp&nbsp&nbspSHOWCASE&nbsp&nbsp&nbsp
           <div class="bluishGrey-bg section-heading-line"></div>
         </div>
         <div class="showcaseCont">
-          <div class="section-header-txt">
+          <div class="section-header-txt animate__animated wow animate__fadeInLeft">
             SOME
             <font class="orangishLite"> HIGHLIGHTED </font>
             PROJECTS MADE BY THE TEAM
           </div>
           <div
-            class="showcase-image"
-            style="background-image: url(./utils/images/projects/project_b.png)"
-          ></div>
-          <div class="showcase-buttons">
-            <div class="showcase-button" value="red">
+            class="showcase-image animate__animated wow animate__fadeIn"
+            style="background-image: url(./utils/images/projects/project_b.png)"></div>
+          <div class="showcase-buttons animate__animated wow animate__fadeInLeft">
+            <div 
+              class="showcase-button animate__animated wow animate__fadeInLeft" 
+              data-wow-delay="0.2s"
+              value="red">
               <div class="white">Name</div>
               <div class="white">TITLE</div>
             </div>
             <div
-              class="showcase-button"
+              class="showcase-button animate__animated wow animate__fadeInLeft" 
+              data-wow-delay="0.4s"
               value="white"
-              style="background: white"
-            >
+              style="background: white">
+              
               <div class="reddish">Name</div>
               <div class="reddish">TITLE</div>
             </div>
-            <div class="showcase-button" value="red">
+            <div 
+              class="showcase-button animate__animated wow animate__fadeInLeft" 
+              data-wow-delay="0.6s" 
+              value="red">
               <div class="white">Name</div>
               <div class="white">TITLE</div>
             </div>
@@ -159,12 +167,12 @@
       <div style="height: 12vh"></div>
       <div class="teamCont" id="team">
         <div class="team-top-spacer"></div>
-        <div class="orangish section-heading">
+        <div class="orangish section-heading animate__animated wow animate__fadeInDown">
           <div class="orangish-bg section-heading-line"></div>
           &nbsp&nbsp&nbspMEET THE TEAM&nbsp&nbsp&nbsp
           <div class="orangish-bg section-heading-line"></div>
         </div>
-        <div class="white section-header-txt-team">OFFICE BEARERS</div>
+        <div class="white section-header-txt-team animate__animated wow animate__fadeInDown">OFFICE BEARERS</div>
         <!-- OBs -->
         <div class="OBS" id="obs">
           <!-- Card for each ob is added here using javascript. -->
@@ -172,7 +180,7 @@
 
         <div class="team-middle-spacer"></div>
 
-        <div class="white section-header-txt-team">CORE COMMITTEE</div>
+        <div class="white section-header-txt-team animate__animated wow animate__fadeInDown">CORE COMMITTEE</div>
 
         <!-- CC -->
         <div id="CC">
@@ -216,5 +224,12 @@
         </label>
       </nav>
     </div>
+    <!-- JQUERY CDN LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- WOW CDN LINK FOR ANIMATIONS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

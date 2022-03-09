@@ -14,10 +14,10 @@ body {
 .navLogo {
   width: 8vh;
   cursor: pointer;
-  animation: navLogo-load var(--navLogo-load-time) ease-in var(--navLogo-load-delay);
+  /* animation: navLogo-load var(--navLogo-load-time) ease-in var(--navLogo-load-delay);
   animation-fill-mode: forwards;
   transform: translateY(0);
-  opacity: 0;
+  opacity: 0; */
 }
 
 .navbar {
@@ -26,7 +26,7 @@ body {
   justify-content: space-between;
   position: absolute;
   width: 88vw;
-  animation: navbar-load var(--navLogo-load-time) ease-out var(--navLogo-load-delay);
+  /* animation: navbar-load var(--navLogo-load-time) ease-out var(--navLogo-load-delay); */
 }
 .navOptionCont {
   display: flex;
@@ -37,10 +37,10 @@ body {
 .navOptions {
   padding: 1vh 2vh;
   border-radius: 10px;
-  animation: navOption-load var(--navOptions-load-time) ease-in var(--navOptions-load-delay);
+  /* animation: navOption-load var(--navOptions-load-time) ease-in var(--navOptions-load-delay);
   animation-fill-mode: forwards;
   transform: translateY(0);
-  opacity: 0;
+  opacity: 0; */
 }
 .navOptions:hover {
   background-color: #FFFFFF45;
@@ -49,7 +49,7 @@ body {
   background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
 }
 
-@keyframes navbar-load {
+/* @keyframes navbar-load {
   0% {
     transform: translateY(-100%);
   }
@@ -80,7 +80,7 @@ body {
     opacity: 1;
   }
 
-}
+} */
 .heroCont {
   background-repeat: no-repeat;
   background-image: url(../utils/images/bg1.svg);
@@ -441,13 +441,13 @@ body.no-scroll {
 }
 .showcase-change {
   animation-name: newshowcase;
-  animation-duration: 1.2s;
+  animation-duration: 800ms;
 }
 @keyframes newshowcase {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
