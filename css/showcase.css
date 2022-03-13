@@ -14,6 +14,9 @@
   justify-content: space-between;
   position: absolute;
   width: 88vw;
+/* ADDING BAVBAR BG ELEMENTS */
+  background-image: url(../utils/images/bg1.svg);
+  transition: 0.6s;
 }
 
 .navOptionCont {
@@ -38,15 +41,21 @@
 .navbarBg {
   background-image: url(../utils/images/bg1.svg);
   width: inherit;
-  height: 16.5vh;
+  height: 16vh;
+  transition: 0.6s;
 }
 
-.navbarBg>.sticky {
+.sticky {
   position: fixed;
   top: 0;
-  background-color: #272727;
-  padding: 2vh 6vw;
+  height: 10vh;
+  padding: 1vh 6vw;
+  z-index: 100000;
+}
 
+.sticky .navLogo{
+  width: 7vh;
+  padding: 1vh 0;
 }
 
 .hero-text {
