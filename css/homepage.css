@@ -14,10 +14,6 @@ body {
 .navLogo {
   width: 8vh;
   cursor: pointer;
-  /* animation: navLogo-load var(--navLogo-load-time) ease-in var(--navLogo-load-delay);
-  animation-fill-mode: forwards;
-  transform: translateY(0);
-  opacity: 0; */
 }
 
 .navbar {
@@ -26,7 +22,6 @@ body {
   justify-content: space-between;
   position: absolute;
   width: 88vw;
-  /* animation: navbar-load var(--navLogo-load-time) ease-out var(--navLogo-load-delay); */
 }
 .navOptionCont {
   display: flex;
@@ -37,10 +32,7 @@ body {
 .navOptions {
   padding: 1vh 2vh;
   border-radius: 10px;
-  /* animation: navOption-load var(--navOptions-load-time) ease-in var(--navOptions-load-delay);
-  animation-fill-mode: forwards;
-  transform: translateY(0);
-  opacity: 0; */
+
 }
 .navOptions:hover {
   background-color: #FFFFFF45;
@@ -49,45 +41,13 @@ body {
   background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
 }
 
-/* @keyframes navbar-load {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 
-@keyframes navOption-load {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-}
-
-@keyframes navLogo-load {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-} */
 .sticky {
   position: fixed;
   top: 0;
   background-color: #272727;
-  /* background : linear-gradient(180deg, #272727, #0573b3); */
   padding: 2vh 6vw;
-  /* width: 100vw; */
+
 }
 
 .heroCont {
