@@ -5,7 +5,9 @@ body {
   --navbar-load-time: 300ms;
   --navbar-load-delay: 200ms;
   --navOptions-load-time: 500ms;
-  --navOptions-load-delay: calc(var(--navbar-load-time) + var(--navbar-load-delay));
+  --navOptions-load-delay: calc(
+    var(--navbar-load-time) + var(--navbar-load-delay)
+  );
 }
 .homepage {
   width: 100vw;
@@ -33,25 +35,22 @@ body {
 .navOptions {
   padding: 1vh 2vh;
   border-radius: 10px;
-
 }
 .navOptions:hover {
-  background-color: #FFFFFF45;
+  background-color: #ffffff45;
 }
 .navOptions:active {
   background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
 }
-
 
 .sticky {
   position: fixed;
   z-index: 100000;
   background-color: #272727;
   padding: 1vh 6vw;
-
 }
 
-.sticky .navLogo{
+.sticky .navLogo {
   width: 7vh;
   padding: 1vh 0;
 }
@@ -108,10 +107,10 @@ body {
   height: 12vh;
 }
 .about {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-evenly;
-  align-items:center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   /* display: grid;
   margin: 0 3vmax;
   align-items: center;
@@ -130,28 +129,50 @@ body {
   grid-row-start: 1;
   grid-row-end: 3;
 }
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
+  width: 30%;
+}
 .showcase-spacer {
   height: 18vh;
 }
 .showcase {
   margin: 0 3vmax;
 }
-.showcaseCont {
-  display: grid;
+.showcase-content {
+  /* margin: 0 5vmax; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  /* display: grid;
   grid-template-areas:
     "3fr 7fr"
     "3fr 7fr";
   grid-gap: 20vh 3vw;
-  margin: 0 3vmax;
+  margin: 0 3vmax; */
 }
+.showcase-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+/* 
 .showcase-image {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 3;
 }
+*/
 .showcase-image {
-  width: 52vw;
+  position: relative;
+  width: 50%;
+  height: auto;
   border-radius: 0.5rem;
   background-position: center;
   background-size: cover;
