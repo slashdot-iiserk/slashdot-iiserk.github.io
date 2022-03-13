@@ -35,6 +35,14 @@
   height: 16.5vh;
 }
 
+.navbarBg>.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #272727;
+  padding: 2vh 6vw;
+
+}
+
 .hero-text {
   margin: 0 0 0 6vw;
   font-weight: 700;
