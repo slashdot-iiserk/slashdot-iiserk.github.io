@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   position: absolute;
   width: 88vw;
-  transition: 0.6s;
+  transition: all 300ms ease-in-out;
 }
 .navOptionCont {
   display: flex;
@@ -43,17 +43,19 @@ body {
   background: linear-gradient(90deg, #0573b3 -0.01%, #02b6d4 99.19%);
 }
 
-.sticky {
+.navbar.sticky {
+  top: 0;
   position: fixed;
   z-index: 100000;
   background-color: #272727;
   padding: 1vh 6vw;
 }
 
-.sticky .navLogo {
+.navbar.sticky .navLogo {
   width: 7vh;
   padding: 1vh 0;
 }
+/* Scrolling Stuff */
 
 .heroCont {
   background-repeat: no-repeat;
@@ -162,13 +164,13 @@ body {
   width: 30%;
 }
 
-/* 
+
 .showcase-image {
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 3;
 }
-*/
+
 .showcase-image {
   position: relative;
   width: 50%;
