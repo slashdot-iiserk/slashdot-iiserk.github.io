@@ -29,6 +29,12 @@
   border-radius: 10px;
 }
 
+.navOptions:hover {
+  background-color: #FFFFFF45;
+  padding: 1vh 2vh;
+  border-radius: 10px;
+}
+
 .navbarBg {
   background-image: url(../utils/images/bg1.svg);
   width: inherit;
