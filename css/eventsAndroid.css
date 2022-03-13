@@ -1,106 +1,68 @@
-.events-page {
-  width: 100%;
+* {
+    box-sizing: border-box;
 }
 
-.navLogo {
-  display: none;
-  margin: 0;
+.upcoming-events-heading{
+    font-size: 4vw;
+    margin-left: 0;
+    text-align: center;
 }
 
-.navbar {
-  display: none;
-  margin: 0;
+.upcoming-event-boxes{
+    flex-direction: column;
+    width: 80vw;
 }
 
-.navOptionCont {
-  display: none;
-  margin: 0;
+.upcoming-event-box{
+    width: 85vw;
+    padding: 0 10vw;
+    height: 30vh;
 }
 
-.hero-cont {
-  background-repeat: no-repeat;
-  background-image: url(../utils/images/bg1.svg);
-  background-size: cover;
-  width: inherit;
-  height: 170vh;
-  width: 100%;
+.upcoming-event-topic{
+    font-size: 4vw;
 }
 
-.hero-text {
-  text-align: center;
-  font-weight: 700;
+.next-session, .venue{
+    font-size: 4vw;
 }
 
-.past-event-txt {
-  font-size: 4.8vh;
-  font-weight: 800;
-  text-align: center;
+.event-line{
+    width: 60vw;
 }
 
-.eventbox {
-  width: 80vw;
-  height: 45vh;
-  background: white;
-  border-radius: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0vw 3vw 0 3vw;
-  margin: 2vh 0;
-  cursor: pointer;
+.section-heading {
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-bottom: 8vmin;
 }
 
-.upcoming-events {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.past-event-box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 70vh;
 }
 
-.past-event-box {
-  display: flex;
-  flex-direction: column;
-  width: 80vw;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  cursor: pointer;
+.past-event-box:nth-of-type(2n){
+    flex-direction: column;
 }
 
-.past-events-boxes {
-  width: inherit;
+.past-event-image{
+    width: 80vw;
 }
 
-.past-event-desc {
-  width: inherit;
-  font-size: 2.5vh;
-  text-align: center;
+.past-event-details{
+    margin-top: 2vh;
+    width: inherit;
+    text-align: center;
 }
 
-.past-event-topic {
-  font-size: 3vh;
-  font-weight: 600;
-  font-style: caps;
-  text-align: center;
+.past-event-topic{
+    font-size: 4vw;
 }
 
-.past-event-image {
-  height: 40vh;
-  display: block;
-}
-
-.event-topic {
-  font-size: 30px;
-}
-
-.event-date {
-  font-size: 18px;
-}
-
-.event-venue {
-  font-size: 18px;
-}
-
-div.second-past-event {
-  flex-direction: column-reverse;
+.past-event-desc{
+    margin-top: 1vh;
+    font-size: 4vw;
 }
