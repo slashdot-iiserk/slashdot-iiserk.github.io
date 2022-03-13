@@ -36,7 +36,7 @@
 .past-event-box{
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly; 
+    justify-content: flex-start; 
     min-height: 70vh;
 }
 
@@ -49,12 +49,12 @@
 }
 
 .past-event-details{
+    margin-top: 2vh;
     width: inherit;
     text-align: center;
 }
 
 .past-event-topic{
-    margin-top: 1vh;
     font-size: 4vw;
 }
 
