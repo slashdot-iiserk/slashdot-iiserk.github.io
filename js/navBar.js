@@ -1,3 +1,4 @@
+
 var prev_scroll_pos = window.pageYOffset;
 var header = this.document.querySelector(".navbar");
 
@@ -16,4 +17,5 @@ window.addEventListener("scroll", () => {
         document.querySelector(".navbar.sticky").style.top = "0";
     }
     prev_scroll_pos = curr_scroll_pos;
+
 })
