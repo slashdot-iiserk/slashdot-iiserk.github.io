@@ -108,11 +108,15 @@ body {
   height: 12vh;
 }
 .about {
-  display: grid;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  align-items:center;
+  /* display: grid;
   margin: 0 3vmax;
   align-items: center;
   grid-gap: 4vw;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; */
 }
 .about-content {
   font-size: 2.5vmin;
