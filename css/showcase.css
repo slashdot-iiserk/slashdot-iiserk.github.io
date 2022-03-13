@@ -14,6 +14,9 @@
   justify-content: space-between;
   position: absolute;
   width: 88vw;
+/* ADDING BAVBAR BG ELEMENTS */
+  background-image: url(../utils/images/bg1.svg);
+  transition: 0.6s;
 }
 
 .navOptionCont {
@@ -29,15 +32,60 @@
   border-radius: 10px;
 }
 
+.navOptions:hover {
+  background-color: #FFFFFF45;
+  padding: 1vh 2vh;
+  border-radius: 10px;
+}
+
 .navbarBg {
   background-image: url(../utils/images/bg1.svg);
   width: inherit;
-  height: 16.5vh;
+  height: 16vh;
+  transition: 0.6s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  padding: 1vh 6vw;
+  z-index: 100000;
+}
+
+.sticky .navLogo{
+  width: 7vh;
+  padding: 1vh 0;
 }
 
 .hero-text {
   margin: 0 0 0 6vw;
   font-weight: 700;
+}
+
+.showcase-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #8888ff;
+}
+
+.showcase-header-line {
+  /* The - in "-- SHOWCASE --" */
+  height: 4px;
+  width: min(16vw, 100px);
+  background-color: #8888ff;
+}
+
+.showcase-header-text {
+  /* The Text between the two lines */
+  width: max(16vw, 200px);
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .showcaseContainer {

@@ -1,6 +1,8 @@
 import { CCMembers, OBMembers } from "./memberData.js";
 import { Projects } from "./memberProjects.js";
 
+
+
 function disablePrevButton(showcaseButtons) {
   for (let i = 0; i < showcaseButtons.length; i++) {
     let someButton = showcaseButtons[i];
@@ -85,7 +87,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
   // console.log(linkKey);
   // console.log(socialLinks, typeof(socialLinks));
   root.innerHTML += `
-  <div class="tile">
+  <div class="tile animate__animated wow animate__zoomIn" data-wow-delay="0.3">
     <div
       class="imgBg ${isOB ? "imgBg--large" : "imgBg--small"} popup-btn"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"

@@ -1,141 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="../utils/images/logo.svg" />
-    <title>/.</title>
 
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/showcase.css" />
-    <link rel="stylesheet" href="../css/allFonts.css" />
-    <link rel="stylesheet" href="../css/colours.css" />
-    <!-- <script defer type="module" src="../js/events.js"></script> -->
-    <script defer type="module" src="../js/showcase.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="../utils/images/logo.svg" />
+  <title>SlashDot Website</title>
 
-  <body>
-    <div class="showcase-page">
-      <!-- desktop version -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/showcase.css" />
+  <link rel="stylesheet" href="../css/allFonts.css" />
+  <link rel="stylesheet" href="../css/colours.css" />
+  <!-- ANIMATE CSS LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <!-- navbar -->
-      <div class="navbarBg desktop">
-        <div class="navbar">
-          <div>
-            <img class="navLogo" src="../utils/images/logo.svg" alt="" />
-          </div>
-          <div class="navOptionCont white">
-            <div class="navOptions" onclick="navclick('navHome')" id="navHome">
-              <a href="../index.html">HOME</a>
-            </div>
-            <div
-              class="navOptions"
-              onclick="navclick('navAbout')"
-              id="navAbout"
-            >
-              <a href="../index.html#about">ABOUT US</a>
-            </div>
-            <div
-              class="navOptions active"
-              onclick="navclick('navShowcase')"
-              id="navShowcase"
-            >
-              <a href="/nav/showcase.html">SHOWCASE</a>
-            </div>
-            <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
-              <a href="../index.html#team">TEAM</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- <script defer type="module" src="../js/events.js"></script> -->
+  <script defer type="module" src="../js/showcase.js"></script>
+</head>
 
-      <div style="height: 7vh" class="desktop"></div>
-      <div style="height: 12vh" class="phone"></div>
+<body>
+  <div class="showcase-page">
+    <!-- desktop version -->
 
-      <!-- SHOWCASE -->
-      <div id="showcase desktop">
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3vh;
-            font-weight: 700;
-            letter-spacing: 4px;
-            color: #8888ff;
-          "
-        >
-          <div
-            style="
-              height: 4px;
-              width: min(16vw, 100px);
-              background-color: #8888ff;
-            "
-          ></div>
-          <div
-            style="
-              width: max(16vw, 200px);
-              text-align: center;
-              margin-left: 10px;
-              margin-right: 10px;
-            "
-          >
-            SHOWCASE
-          </div>
-          <div
-            style="
-              height: 4px;
-              width: min(16vw, 100px);
-              background-color: #8888ff;
-            "
-          ></div>
-        </div>
-        <!-- SPACING BETWEEN CONTENT AND TITLE -->
-        <div style="height: 5vh" class="desktop"></div>
-        <div style="height: 2vh" class="phone"></div>
-        <!-- SHOWCASE MAIN CONTAINER -->
-        <div class="showcaseContainer desktop" id="showcaseContainer"></div>
-      </div>
-
-      <!-- mobile version -->
-
-      <!-- navbar phone -->
-      <div class="phone">
-        <nav>
+    <!-- navbar -->
+    <div class="navbarBg desktop animate__animated wow animate__fadeInDown">
+      <div class="navbar">
+        <div>
           <img class="navLogo" src="../utils/images/logo.svg" alt="" />
-
-          <input id="nav-toggle" type="checkbox" />
-          <ul class="links">
-            <div class="navOptions" onclick="navclick('navHome')" id="navHome">
-              <a href="../index.html">HOME</a>
-            </div>
-            <div
-              class="navOptions"
-              onclick="navclick('navAbout')"
-              id="navAbout"
-            >
-              <a href="./about.html">ABOUT US</a>
-            </div>
-            <div
-              class="navOptions active"
-              onclick="navclick('navShowcase')"
-              id="navShowcase"
-            >
-              <a href="/nav/showcase.html">SHOWCASE</a>
-            </div>
-            <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
-              <a href="./team.html">TEAM</a>
-            </div>
-          </ul>
-          <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </label>
-        </nav>
+        </div>
+        <div class="navOptionCont white">
+          <div class="navOptions" onclick="navclick('navHome')" id="navHome">
+            <a href="../index.html">HOME</a>
+          </div>
+          <div class="navOptions" onclick="navclick('navAbout')" id="navAbout">
+            <a href="../index.html#about">ABOUT US</a>
+          </div>
+          <div class="navOptions active" onclick="navclick('navShowcase')" id="navShowcase">
+            <a href="/nav/showcase.html">SHOWCASE</a>
+          </div>
+          <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
+            <a href="../index.html#team">TEAM</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div style="height: 16vh"></div>
-  </body>
+  
+
+    <div style="height: 7vh" class="desktop"></div>
+    <div style="height: 12vh" class="phone"></div>
+
+    <!-- SHOWCASE -->
+    <div id="showcase desktop">
+      <div class="showcase-header">
+        <div class="showcase-header-line animate__animated wow animate__fadeInLeft"></div>
+        <div class="showcase-header-text animate__animated wow animate__zoomIn">
+          SHOWCASE
+        </div>
+        <div class="showcase-header-line animate__animated wow animate__fadeInRight"></div>
+      </div>
+      <!-- SPACING BETWEEN CONTENT AND TITLE -->
+      <div style="height: 5vh" class="desktop"></div>
+      <div style="height: 2vh" class="phone"></div>
+      <!-- SHOWCASE MAIN CONTAINER -->
+      <div class="showcaseContainer desktop" id="showcaseContainer"></div>
+    </div>
+
+    <!-- mobile version -->
+
+    <!-- navbar phone -->
+    <div class="phone">
+      <nav>
+        <img class="navLogo" src="../utils/images/logo.svg" alt="" />
+
+        <input id="nav-toggle" type="checkbox" />
+        <ul class="links">
+          <div class="navOptions" onclick="navclick('navHome')" id="navHome">
+            <a href="../index.html">HOME</a>
+          </div>
+          <div class="navOptions" onclick="navclick('navAbout')" id="navAbout">
+            <a href="./about.html">ABOUT US</a>
+          </div>
+          <div class="navOptions active" onclick="navclick('navShowcase')" id="navShowcase">
+            <a href="/nav/showcase.html">SHOWCASE</a>
+          </div>
+          <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
+            <a href="./team.html">TEAM</a>
+          </div>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    </div>
+  </div>
+  <div style="height: 16vh"></div>
+
+  <!-- JQUERY CDN LINK -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- WOW CDN LINK FOR ANIMATIONS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- STICKY NAVBAR SINCE THE CLASSES USED ARE DIFFERENT IN 
+         HOMEPAGE AND SHOWCASE I HAD TO WRITE A CUSTOM SCRIPT
+  -->
+  <script src="../js/navBar.js"></script>
+</body>
+
 </html>
