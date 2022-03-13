@@ -81,6 +81,15 @@ body {
   }
 
 } */
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #272727;
+  /* background : linear-gradient(180deg, #272727, #0573b3); */
+  padding: 2vh 6vw;
+  /* width: 100vw; */
+}
+
 .heroCont {
   background-repeat: no-repeat;
   background-image: url(../utils/images/bg1.svg);
