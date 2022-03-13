@@ -20,38 +20,38 @@
   </head>
   <body>
     <div class="events-page">
-      <!-- navbar -->
-      <div class="navbarBg desktop">
-        <div class="navbar">
-          <div>
-            <img class="navLogo" src="../utils/images/logo.svg" alt="" />
-          </div>
-          <div class="navOptionCont white">
-            <div class="navOptions" onclick="navclick('navHome')" id="navHome">
-              <a href="../index.html">HOME</a>
+      <!-- Upcoming events -->
+      <div class="upcoming-events">
+        <!-- navbar -->
+        <div class="navbarBg desktop">
+          <div class="navbar">
+            <div>
+              <img class="navLogo" src="../utils/images/logo.svg" alt="" />
             </div>
-            <div
-              class="navOptions"
-              onclick="navclick('navAbout')"
-              id="navAbout"
-            >
-              <a href="../index.html#about">ABOUT US</a>
-            </div>
-            <div
-              class="navOptions"
-              onclick="navclick('navShowcase')"
-              id="navShowcase"
-            >
-              <a href="/nav/showcase.html">SHOWCASE</a>
-            </div>
-            <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
-              <a href="../index.html#team">TEAM</a>
+            <div class="navOptionCont white">
+              <div class="navOptions" onclick="navclick('navHome')" id="navHome">
+                <a href="./index.html">HOME</a>
+              </div>
+              <div
+                class="navOptions"
+                onclick="navclick('navAbout')"
+                id="navAbout"
+              >
+                <a href="./index.html#about">ABOUT US</a>
+              </div>
+              <div
+                class="navOptions"
+                onclick="navclick('navShowcase')"
+                id="navShowcase"
+              >
+                <a href="./nav/showcase.html">SHOWCASE</a>
+              </div>
+              <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
+                <a href="./index.html#team">TEAM</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Upcoming events -->
-      <div class="upcoming-events">
         <!-- Space between navbar and upcoming events -->
         <div class="desktop"style="height: 16vh;"></div>
         <div class="phone" style="height: 14vh;"></div>
@@ -125,5 +125,7 @@
       </div>
       <div style="height:8vh;"></div>
     </div>
+    <!-- navbar sticky toggle -->
+    <script src="../js/navBar.js"></script>
   </body>
 </html>

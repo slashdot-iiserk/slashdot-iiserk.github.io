@@ -1,6 +1,5 @@
 *{
   margin: 0;
-  box-sizing: border-box;
 }
 
 .events-page{
@@ -18,6 +17,8 @@
   justify-content: space-between;
   position: absolute;
   width: 88vw;
+/* ADDING BAVBAR BG ELEMENTS */
+  transition: 0.6s;
 }
 
 .navOptionCont {
@@ -33,10 +34,30 @@
   border-radius: 10px;
 }
 
+.navOptions:hover {
+  background-color: #FFFFFF45;
+  padding: 1vh 2vh;
+  border-radius: 10px;
+}
+
 .navbarBg {
-  background-image: url(../utils/images/bg1.svg);
   width: inherit;
-  height: 16.5vh;
+  height: 16vh;
+  transition: 0.6s;
+}
+
+.sticky {
+  background: url("../utils/images/bg2.svg");
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  padding: 1vh 6vw;
+  z-index: 100000;
+}
+
+.sticky .navLogo{
+  width: 7vh;
+  padding: 1vh 0;
 }
 
 .upcoming-events{
