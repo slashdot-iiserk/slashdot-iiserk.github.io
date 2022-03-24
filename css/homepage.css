@@ -119,6 +119,10 @@ body {
   grid-gap: 4vw;
   grid-template-columns: 1fr 1fr; */
 }
+
+.about-header {
+  padding : 4vh 0px 4vh 0px;
+}
 .about-content {
   font-size: 2.5vmin;
   font-weight: 500;
