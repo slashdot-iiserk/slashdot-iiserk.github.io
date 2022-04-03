@@ -170,7 +170,7 @@ export const CCMembers = [
   },
   {
     name: "Sai Kishore N",
-    image: "../assets/Sai Kishore N.JPG",
+    image: "../assets/Sai Kishore N.jpg",
     designation: "Member",
     description:
       "Studying BS-MS in IISER Kolkata (2020 batch) and joined slashdot CC to do fun projects.",
