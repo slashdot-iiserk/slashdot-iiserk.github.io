@@ -291,6 +291,8 @@ body.no-scroll {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  cursor: pointer;
+
   font-size: 3em !important;
 }
 
@@ -304,10 +306,12 @@ body.no-scroll {
   padding: 10px;
   width: 2vh;
   height: 2vh;
-  background-color: #02b6d4;
+  /*background-color: #02b6d4; */
   text-align: center;
   border-radius: 1vh;
   font-size: 100%;
+  cursor: pointer;
+
 }
 .CCRow {
   display: flex;
