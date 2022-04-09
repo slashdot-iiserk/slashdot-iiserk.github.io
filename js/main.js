@@ -1,5 +1,5 @@
-import { CCMembers, OBMembers } from "./memberData.js";
-import { Projects } from "./memberProjects.js";
+import { CCMembers, OBMembers } from "memberData.js";
+import { Projects } from "memberProjects.js";
 
 
 
@@ -59,16 +59,17 @@ function funShowcase() {
 }
 funShowcase();
 
-function returnLinks(socialLinks) {
+function returnLinks(socialLinks, color) {
   const linkKey = Object.keys(socialLinks);
   var socialElement = ``;
   linkKey.forEach((key, index) => {
     socialElement += `
-    <div>
-      <a href='${socialLinks[key]}' target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-${key}" ></i>  
-      </a>
-    </div>`;
+    <a href='${socialLinks[key]}' target="_blank" rel="noopener noreferrer">
+      <div style = "background-color:${color};">
+          <i class="fa fa-${key}" ></i>  
+      </div>
+    </a>
+    `;
   });
   return socialElement;
 }
@@ -90,7 +91,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
   <div class="tile animate__animated wow animate__zoomIn" data-wow-delay="0.3">
     <div
       class="imgBg ${isOB ? "imgBg--large" : "imgBg--small"} popup-btn"
-      style="background-image: url(./utils/images/${circleColor}_circle.svg)"
+      style="background-image: url(utils/images/${circleColor}_circle.svg)"
     >
       <img class="roundImg ${
         isOB ? "img--large" : "img--small"
@@ -108,7 +109,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
       <i class="fa fa-times close-me white"></i>
     <div
       class="imgBg imgBg--large"
-      style="background-image: url(./utils/images/${circleColor}_circle.svg)"
+      style="background-image: url(utils/images/${circleColor}_circle.svg)"
     >
       <img class="roundImg img--large" src="${image}" alt="${name}'s Picture" />
     </div>
@@ -120,8 +121,8 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
         <div class="grey" style="padding-top: 3vh; font-size: 1.5vmax">
           ${description}
         </div>
-        <div class="social">
-          ${returnLinks(socialLinks)}
+        <div class="social" background->
+          ${returnLinks(socialLinks, circleColor)}
         </div>
       </div>
     </div>
