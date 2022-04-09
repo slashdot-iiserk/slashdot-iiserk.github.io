@@ -158,6 +158,7 @@ nav .icon-burger .line {
   }
   nav .icon-burger {
     display: block;
+    cursor: pointer;
   }
   nav :checked ~ .icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);
