@@ -1,5 +1,5 @@
-import { CCMembers, OBMembers } from "memberData.js";
-import { Projects } from "memberProjects.js";
+import { CCMembers, OBMembers } from "./memberData.js";
+import { Projects } from "./memberProjects.js";
 
 
 
@@ -65,7 +65,7 @@ function returnLinks(socialLinks, color) {
   linkKey.forEach((key, index) => {
     socialElement += `
     <a href='${socialLinks[key]}' target="_blank" rel="noopener noreferrer">
-      <div style = "background-color:${color};">
+      <div style = "background-color:${color}">
           <i class="fa fa-${key}" ></i>  
       </div>
     </a>
@@ -91,7 +91,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
   <div class="tile animate__animated wow animate__zoomIn" data-wow-delay="0.3">
     <div
       class="imgBg ${isOB ? "imgBg--large" : "imgBg--small"} popup-btn"
-      style="background-image: url(utils/images/${circleColor}_circle.svg)"
+      style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
       <img class="roundImg ${
         isOB ? "img--large" : "img--small"
@@ -109,7 +109,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
       <i class="fa fa-times close-me white"></i>
     <div
       class="imgBg imgBg--large"
-      style="background-image: url(utils/images/${circleColor}_circle.svg)"
+      style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
       <img class="roundImg img--large" src="${image}" alt="${name}'s Picture" />
     </div>
