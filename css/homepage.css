@@ -228,9 +228,15 @@ body {
   width: 24vmax;
   height: 24vmax;
 }
+
 .imgBg--small {
   width: 15vmax;
   height: 15vmax;
+}
+
+.imgBg--large--desc {
+    width: 24vmax;
+    height: 24vmax;
 }
 
 .roundImg {
