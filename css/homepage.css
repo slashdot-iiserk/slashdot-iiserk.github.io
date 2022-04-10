@@ -247,6 +247,13 @@ body {
   object-fit: cover;
 }
 
+.imgBg--large:hover{
+  transform:scale(1.1);
+}
+.imgBg--small:hover{
+  transform:scale(1.1);
+}
+
 .popup-btn {
   cursor: help;
 }
@@ -292,8 +299,11 @@ body.no-scroll {
   top: 1rem;
   right: 1rem;
   cursor: pointer;
-
   font-size: 3em !important;
+}
+
+.close-me:hover {
+  transform:scale(1.2);
 }
 
 .social {
@@ -311,8 +321,12 @@ body.no-scroll {
   border-radius: 1vh;
   font-size: 100%;
   cursor: pointer;
-
 }
+
+.social div:hover{
+  transform:scale(1.15);
+}
+
 .CCRow {
   display: flex;
   justify-items: center;
