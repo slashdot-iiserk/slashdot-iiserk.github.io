@@ -111,7 +111,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
       class="imgBg imgBg--large"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
-      <img class="roundImg img--large" src="${image}" alt="${name}'s Picture" />
+      <img class="roundImg img--large--desc" src="${image}" alt="${name}'s Picture" />
     </div>
       <div class="description-txt">
         <div class="white" style="font-size: 3vmax">
