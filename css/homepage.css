@@ -232,9 +232,15 @@ body {
   width: 24vmax;
   height: 24vmax;
 }
+
 .imgBg--small {
   width: 15vmax;
   height: 15vmax;
+}
+
+.imgBg--large--desc {
+    width: 24vmax;
+    height: 24vmax;
 }
 
 .roundImg {
@@ -249,6 +255,13 @@ body {
   width: 10vmax;
   height: 10vmax;
   object-fit: cover;
+}
+
+.imgBg--large:hover{
+  transform:scale(1.1);
+}
+.imgBg--small:hover{
+  transform:scale(1.1);
 }
 
 .popup-btn {
@@ -295,7 +308,12 @@ body.no-scroll {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  cursor: pointer;
   font-size: 3em !important;
+}
+
+.close-me:hover {
+  transform:scale(1.2);
 }
 
 .social {
@@ -308,11 +326,17 @@ body.no-scroll {
   padding: 10px;
   width: 2vh;
   height: 2vh;
-  background-color: #02b6d4;
+  /*background-color: #02b6d4; */
   text-align: center;
   border-radius: 1vh;
   font-size: 100%;
+  cursor: pointer;
 }
+
+.social div:hover{
+  transform:scale(1.15);
+}
+
 .CCRow {
   display: flex;
   justify-items: center;
