@@ -29,7 +29,7 @@ body {
 .navOptionCont {
   display: flex;
   justify-content: space-between;
-  width: 50vw;
+  width: 55vw;
   align-items: center;
 }
 .navOptions {
@@ -118,6 +118,10 @@ body {
   align-items: center;
   grid-gap: 4vw;
   grid-template-columns: 1fr 1fr; */
+}
+
+.about-header {
+  padding : 4vh 0px 4vh 0px;
 }
 .about-content {
   font-size: 2.5vmin;

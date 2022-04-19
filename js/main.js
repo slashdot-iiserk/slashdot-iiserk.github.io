@@ -40,11 +40,14 @@ function validClick(showcaseButton, showcaseButtons, showcaseImage, index) {
 
 function funShowcase() {
   const showcaseButtons = document.querySelectorAll(".showcase-button");
+  // console.log(showcaseButtons);
+  // console.log(Projects);
   const showcaseImage = document.querySelector(".showcase-image");
   showcaseButtons.forEach((showcaseButton, index) => {
     /*Displaying project details */
     showcaseButton.children[0].innerHTML = Projects[index].name;
     showcaseButton.children[1].innerHTML = Projects[index].title;
+    console.log(showcaseButton);
     showcaseButton.addEventListener(
       "click",
       () => {
@@ -56,6 +59,7 @@ function funShowcase() {
       false
     );
   });
+
 }
 funShowcase();
 
