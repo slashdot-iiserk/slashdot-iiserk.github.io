@@ -1,10 +1,10 @@
 export const OBMembers = [
   {
     name: "Abhay Kshirsagar",
-    image: "../assets/Kshirsagar Abhay Shrikrishna.jpg",
+    image: "./assets/Kshirsagar Abhay Shrikrishna.jpg",
     designation: "Convener",
     description:
-      "I am Third Year BSMS student and the current Convener of SlashDot. My main motive for joining SlashDot was Club Money ... JK. I am interested in Computational Biology and Machine Learning and the club naturally resonated with my interests. Apart from begin the office bearer I also conduct Programming Workshops for the club. You can connect with by clicking the following links",
+      "I am Third Year BSMS student and the current Convener of SlashDot. My main motive for joining SlashDot was Club Money .. JK. I am interested in Computational Biology and Machine Learning and the club naturally resonated with my interests. Apart from begin the office bearer I also conduct Programming Workshops for the club. You can connect with by clicking the following links",
     socialLinks: {
       facebook: "https://ak6263.github.io/",
       // instagram: "https://www.instagram.com/",
@@ -15,7 +15,7 @@ export const OBMembers = [
   },
   {
     name: "Anurit Dey",
-    image: "../assets/Anurit Dey.jpg",
+    image: "./assets/Anurit Dey.jpg",
     designation: "Secretary",
     description: "Hey, I am a 3rd year BSMS student, and currently the Secretary of SlashDot. Machine Learning and Data Sciences are my interest areas. SlashDot as a club is relatively new which opens up the opportunity to build the club from scratch, to lay the foundations of the club. This was one of my major reasons behind joining the club. You can find me either playing badminton or at the RC Lake with some chai and  toast listening to \"When Chai Met Toast\".",
     socialLinks: {
@@ -28,7 +28,7 @@ export const OBMembers = [
   },
   {
     name: "Rohit Verma",
-    image: "../assets/Rohit Verma.jpg",
+    image: "./assets/Rohit Verma.jpg",
     designation: "Teasurer",
     description:
       "I'm a 2nd year undergraduate student, pursuing BS-MS integrated course at IISER Kolkata. I've a keen interest in theoretical physics and applied mathematics. Apart from that, I like to designing, and little coding.",
@@ -44,7 +44,7 @@ export const OBMembers = [
 export const CCMembers = [
   {
     name: "Amarjeet Kumar",
-    image: "../assets/Amarjeet Kumar.jpg",
+    image: "./assets/Amarjeet Kumar.jpg",
     designation: "Member",
     description:
       "Amarjeet is a computer nerd who spends most of his waking hour in front of his laptop building all sorts of websites and apps. And he uses Arch BTW.",
@@ -58,7 +58,7 @@ export const CCMembers = [
   },
   {
     name: "Satyam Mahajan",
-    image: "../assets/Satyam Mahajan.png",
+    image: "./assets/Satyam Mahajan.png",
     designation: "Member",
     description:
       "Currently a sophomore, an aspiring researcher exploring diverse flavors of Sciences. I have a keen enthusiasm for computation and data science which is my  ultimate motive for associating myself with Slashdot. Basically, I am a too lazy person to move around so I like doing random stuffs on my laptop which requires little to zero physical motion XD.",
@@ -72,7 +72,7 @@ export const CCMembers = [
   },
   {
     name: "Sai Sagole",
-    image: "../assets/Sai Sunil Sagole.jpg",
+    image: "./assets/Sai Sunil Sagole.jpg",
     designation: "Member",
     description: "Hello! I am a 3rd-year undergrad majoring in Biology. Movies and art are my get away from reality. I am always interested in learning and getting to know about new things (not a nerd); hence joined SlashDot CC!",
     socialLinks: {
@@ -85,7 +85,7 @@ export const CCMembers = [
   },
   {
     name: "Shivam Kumar",
-    image: "../assets/Shivam Kumar.jpeg",
+    image: "./assets/Shivam Kumar.jpeg",
     designation: "Member",
     description:
       "Currently, DPS, 3rd-year undergrad - like to code, listen to music - know some editing - now trying to learn ML.\nI joined SlashDot CC because I believe I am better in back-end development than in the front-end.",
@@ -99,7 +99,7 @@ export const CCMembers = [
   },
   {
     name: "Soumyajit Datta",
-    image: "../assets/Soumyajit Datta.jpg",
+    image: "./assets/Soumyajit Datta.jpg",
     designation: "Member",
     description:
       'I am currently in 2nd year at IISER Kolkata. I joined Slashdot CC because I like designing and coding and I wanted to contribute to the club. I design posters of slashshorts which is a weekly series of "shorts tricks and tips of coding".',
@@ -114,7 +114,7 @@ export const CCMembers = [
   },
   {
     name: "Utkarsh Pandey",
-    image: "../assets/Utkarsh Pandey.jpg",
+    image: "./assets/Utkarsh Pandey.jpg",
     designation: "Member",
     description:
       "I am Utkarsh from 20MS, a typical happy-go-lucky fellow venturing wonders of life. I joined Slashdot CC to give myself a chance to explore my interest in coding. Primarily I code in Python and Java, but I keep an open mind to try anything new. I can be found playing basketball or cricket in my free time.",
@@ -128,7 +128,7 @@ export const CCMembers = [
   },
   {
     name: "Prajakta Kashyap",
-    image: "../assets/Prajakta Kashyap.jpg",
+    image: "./assets/Prajakta Kashyap.jpg",
     designation: "Member",
     description:
       "I am Prajakta from 20MS, aka uncontrollable source of laughter. A typical coulombic attraction between Prajakta and literally any media-editing \nwork is constant. I am not that experienced in coding but decided to join Slashdot CC to make people aware that it's a coding and DESIGNING club, such that anybody who is interested in scribbling the walls at home can hop in here and have a huge lot of fun with this team! I can be very useful at times for writing unnecessarily long paragraphs as well! (Just like the way I did just now XD)\nThat's all...",
@@ -142,7 +142,7 @@ export const CCMembers = [
   },
   {
     name: "Baivab Kumar Saha",
-    image: "../assets/Baivab Kumar Saha.jpg",
+    image: "./assets/Baivab Kumar Saha.jpg",
     designation: "Member",
     description:
       "Hey there! I am presently a sophomore at IISER Kolkata and I am interested in exploring and working out more efficient solutions for existing problems. I love designing and coding. I joined Slashdot CC to build upon my skillset and to contribute in the fun events organised by the club.",
@@ -156,7 +156,7 @@ export const CCMembers = [
   },
   {
     name: "Sayantan Khan",
-    image: "../assets/Sayantan Khan.jpg",
+    image: "./assets/Sayantan Khan.jpg",
     designation: "Member",
     description:
       "A budding Chem enthusiast, exploring everything from quarks to quasars. Apart from being professionally passionate, he loves jamming with his guitar, the voyage of words on a pristine paper and the frolic of colours in his beaker.\n\nLiving in the art of science, his mind craves for dividing big problems into small snippets, which turned him out to join this fam!",
@@ -170,7 +170,7 @@ export const CCMembers = [
   },
   {
     name: "Sai Kishore N",
-    image: "../assets/Sai Kishore N.JPG",
+    image: "./assets/Sai Kishore N.jpg",
     designation: "Member",
     description:
       "Studying BS-MS in IISER Kolkata (2020 batch) and joined slashdot CC to do fun projects.",
@@ -184,7 +184,7 @@ export const CCMembers = [
   },
   {
     name: "G P Hrishikesh",
-    image: "../assets/G. P Hrishikesh.jpg",
+    image: "./assets/G. P Hrishikesh.jpg",
     designation: "Member",
     description:
       "Hey! I am Hrishikesh , II year undergrad student in IISER K. It has been great working in the Slashdot CC. Slashdot CC has given me an excellent platform to hone my web designing skills.",
@@ -199,7 +199,7 @@ export const CCMembers = [
   },
   {
     name: "Anish Dey",
-    image: "../assets/Anish Dey.jpg",
+    image: "./assets/Anish Dey.jpg",
     designation: "Member",
     description:
       "I joined Slashdot CC to get ahold of how a club runs, and very importantly, it was in my interest zone. Although I did not have CS in high school, I learned some basic programming after entering college in the first semester. Currently, I am exploring ML.",
@@ -213,7 +213,7 @@ export const CCMembers = [
   },
   {
     name: "Sri Sindhu Bhatta",
-    image: "../assets/B Srisindhu.jpg",
+    image: "./assets/B Srisindhu.jpg",
     designation: "Member",
     description:
       "I am currently a sophomore at IISER Kolkata. Apart from being passionate about sleeping and being lazy, you can see me dabbling around with many interests, from occasionally failing to do beginner projects with Arduino to losing TT matches. \nSlashDot CC is a fantastic community of Coding and Designing enthusiasts. Not only did I get to meet people with similar interests and do fun projects, but also I was able to make friends for a lifetime.\n",
@@ -228,7 +228,7 @@ export const CCMembers = [
   /*
   {
     name: "Mr. Meow",
-    image: "../utils/images/img.png",
+    image: "./utils/images/img.png",
     designation: "Member",
     description:
       "",

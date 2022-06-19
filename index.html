@@ -27,7 +27,7 @@
       <div class="desktop">
         <div id="nav-bar-id" class="navbar animate__animated animate__fadeInDown">
           <div>
-            <img class="navLogo" src="../utils/images/logo.svg" alt="" />
+            <img class="navLogo" src="./utils/images/logo.svg" alt="" />
           </div>
           <div class="navOptionCont white">
             <div
@@ -35,7 +35,7 @@
               onclick="navclick('navHome')"
               id="navHome"
             >
-              <a href="/">HOME</a>
+              <a href="#">HOME</a>
             </div>
             <div
               class="navOptions"
@@ -49,7 +49,14 @@
               onclick="navclick('navShowcase')"
               id="navShowcase"
             >
-              <a href="./nav/showcase.html">SHOWCASE</a>
+              <a href="nav/showcase.html">SHOWCASE</a>
+            </div>
+            <div
+              class="navOptions"
+              onclick="navclick('navEvents')"
+              id="navEvents"
+            >
+              <a href="./events.html">EVENTS</a>
             </div>
             <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
               <a href="#team">TEAM</a>
@@ -89,7 +96,7 @@
               THE CODING AND DESIGNING CLUB OF IISER KOLKATA
             </div>
           </div>
-            <img class="heroImg animate__animated wow animate__zoomIn"  src="./utils/images/section1.svg" alt="" />
+            <img class="heroImg animate__animated wow animate__zoomIn"  src="utils/images/section1.svg" alt="" />
         </div>
       </div>
       <!-- about section -->
@@ -102,68 +109,92 @@
           <div class="reddish-bg section-heading-line"></div>
         </div>
         <div class="about">
-          <img class="animate__animated wow animate__fadeInLeft" src="./utils/images/section2.svg" alt="" />
+          <img class="animate__animated wow animate__fadeInLeft" src="utils/images/section2.svg" alt="" />
           <div class="about-text">
-            <div class="section-header-txt about-header animate__animated wow animate__fadeInRight" style="padding:0 0 4vh 0;">
-              EXPLAIN ABOUT
-              <font class="bluishGrey">SLASHDOT</font> IN ONE OR TWO LINES
+            <div class="section-header-txt about-header animate__animated wow animate__fadeInRight" style="padding:4vh 0px 4vh 0;">
+              Hola! You've stepped into the cynosure for the perks of cool coding skills. SlashDot is the official coding and designing club of the Indian Institute of Science Education and Research (IISER) Kolkata.
+
             </div>
             <div class="about-content animate__animated wow animate__fadeInRight">
-              This is some random text. Chances are good that there's a cloud
-              software as a service solution on the market today that will serve
-              your core back-office needs. Many of those products offer the
-              potential not just to move your data and processes to cloud. This is
-              some random text. Chances are good that there's a cloud software as
-              a service solution on the market today that will serve your core
-              back-office needs.
+              Simplicity is the soul of efficiency. And our club loves to explore every nook and corner of the modern day coding world, learning how to think out of the box, starting from the scratch. Grab your coffee, Devs! We are here to proffer an exquisite glimpse of how the club works and helps you master the mysteries across the supple ups and downs of programming and designing fantasy!
+
             </div>
           </div>
         </div>
       </div>
       <!-- showcase -->
       <div class="showcase-spacer"></div>
-      <div id="showcase" class="showcase">
-        <div class="bluishGrey section-heading animate__animated wow animate__fadeInDown">
-          <div class="bluishGrey-bg section-heading-line"></div>
-          &nbsp&nbsp&nbspSHOWCASE&nbsp&nbsp&nbsp
-          <div class="bluishGrey-bg section-heading-line"></div>
+      <div class="desktop">
+        <div id="showcase" class="showcase">
+          <div class="bluishGrey section-heading animate__animated wow animate__fadeInDown">
+            <div class="bluishGrey-bg section-heading-line"></div>
+            &nbsp&nbsp&nbspSHOWCASE&nbsp&nbsp&nbsp
+            <div class="bluishGrey-bg section-heading-line"></div>
+          </div>
+          <div class="showcase-content">
+            <div class="showcase-text" >
+              <div class="section-header-txt animate__animated wow animate__fadeInLeft" style="padding:0 0 10vh 0;">
+                SOME
+                <font class="orangishLite"> HIGHLIGHTED </font>
+                PROJECTS MADE BY THE TEAM
+              </div>
+              <div class="showcase-buttons animate__animated wow animate__fadeInLeft">
+                <div 
+                  class="showcase-button animate__animated wow animate__fadeInLeft" 
+                  data-wow-delay="0.1s"
+                  value="red">
+                  <div class="white">Name</div>
+                  <div class="white">TITLE</div>
+                </div>
+                <div
+                  class="showcase-button animate__animated wow animate__fadeInLeft" 
+                  data-wow-delay="0.3s"
+                  value="white"
+                  style="background: white">
+                  
+                  <div class="reddish">Name</div>
+                  <div class="reddish">TITLE</div>
+                </div>
+                <div 
+                  class="showcase-button animate__animated wow animate__fadeInLeft" 
+                  data-wow-delay="0.5s" 
+                  value="red">
+                  <div class="white">Name</div>
+                  <div class="white">TITLE</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="showcase-image animate__animated wow animate__fadeIn"
+              style="background-image: url(./utils/images/projects/project_b.png)">
+            </div>
+          </div>
         </div>
-        <div class="showcase-content">
-          <div class="showcase-text" >
-            <div class="section-header-txt animate__animated wow animate__fadeInLeft" style="padding:0 0 10vh 0;">
-              SOME
-              <font class="orangishLite"> HIGHLIGHTED </font>
-              PROJECTS MADE BY THE TEAM
-            </div>
-            <div class="showcase-buttons animate__animated wow animate__fadeInLeft">
-              <div 
-                class="showcase-button animate__animated wow animate__fadeInLeft" 
-                data-wow-delay="0.1s"
-                value="red">
-                <div class="white">Name</div>
-                <div class="white">TITLE</div>
-              </div>
-              <div
-                class="showcase-button animate__animated wow animate__fadeInLeft" 
-                data-wow-delay="0.3s"
-                value="white"
-                style="background: white">
-                
-                <div class="reddish">Name</div>
-                <div class="reddish">TITLE</div>
-              </div>
-              <div 
-                class="showcase-button animate__animated wow animate__fadeInLeft" 
-                data-wow-delay="0.5s" 
-                value="red">
-                <div class="white">Name</div>
-                <div class="white">TITLE</div>
-              </div>
-            </div>
+      </div>
+      <div class="phone">
+        <div id="showcase" class="showcase-phone">
+          <div class="bluishGrey section-heading animate__animated wow animate__fadeInDown">
+            <div class="bluishGrey-bg section-heading-line"></div>
+            &nbsp&nbsp&nbspSHOWCASE&nbsp&nbsp&nbsp
+            <div class="bluishGrey-bg section-heading-line"></div>
+          </div>
+          <!-- TODO : Use Owl Carousel 2 for adding a sliding animation -->
+          <div class="section-header-txt animate__animated wow animate__fadeInLeft" style="padding:0 0 10vh 0;">
+            SOME
+            <font class="orangishLite"> HIGHLIGHTED </font>
+            PROJECTS MADE BY THE TEAM
           </div>
           <div
             class="showcase-image animate__animated wow animate__fadeIn"
             style="background-image: url(./utils/images/projects/project_b.png)">
+          </div>
+          <div class="showcase-buttons animate__animated wow animate__fadeInLeft">
+            <!-- TODO : Add Owl Carousel Here so this is useless-->
+          </div>
+          <div class="showcase-text"> </div>
+
+            
+            
           </div>
         </div>
       </div>
@@ -200,16 +231,17 @@
     <!-- mobile version -->
     <!-- navbar phone -->
     <div class="phone">
-      <nav>
+
+      <nav class="phone-navbar">
         <img class="navLogo" src="../utils/images/logo.svg" alt="" />
 
         <input id="nav-toggle" type="checkbox" />
         <ul class="links">
           <div class="navOptions" onclick="navclick('navHome')" id="navHome">
-            <a href="/">HOME</a>
+            <a href="#">HOME</a>
           </div>
           <div class="navOptions" onclick="navclick('navAbout')" id="navAbout">
-            <a href="./about.html">ABOUT US</a>
+            <a href="#about">ABOUT US</a>
           </div>
           <div
             class="navOptions active"
@@ -219,7 +251,7 @@
             <a href="./nav/showcase.html">SHOWCASE</a>
           </div>
           <div class="navOptions" onclick="navclick('navTeam')" id="navTeam">
-            <a href="./team.html">TEAM</a>
+            <a href="#team">TEAM</a>
           </div>
         </ul>
         <label for="nav-toggle" class="icon-burger">

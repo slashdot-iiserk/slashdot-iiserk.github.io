@@ -24,8 +24,12 @@
 .navOptionCont {
   display: flex;
   justify-content: space-between;
-  width: 50vw;
+  width: 55vw;
   align-items: center;
+}
+
+.navOptions {
+  padding: 1vh 2vh;
 }
 
 .navOptions.active {

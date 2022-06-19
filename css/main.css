@@ -73,7 +73,7 @@ nav {
   right: 0;
   top: 0;
   padding: 2vh;
-  height: 80px;
+  height: 6.5vh;
   background-color: #0000006e;
   display: flex;
   justify-content: flex-start;
@@ -127,6 +127,12 @@ nav .icon-burger .line {
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
 }
+
+.phone-navbar.sticky {
+  top: 0;
+  position: fixed;
+  z-index: 100000;
+}
 @media screen and (max-width: 900px) {
   nav .logo {
     float: none;
@@ -158,6 +164,7 @@ nav .icon-burger .line {
   }
   nav .icon-burger {
     display: block;
+    cursor: pointer;
   }
   nav :checked ~ .icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);

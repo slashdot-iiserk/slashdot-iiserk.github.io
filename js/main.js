@@ -40,11 +40,14 @@ function validClick(showcaseButton, showcaseButtons, showcaseImage, index) {
 
 function funShowcase() {
   const showcaseButtons = document.querySelectorAll(".showcase-button");
+  // console.log(showcaseButtons);
+  // console.log(Projects);
   const showcaseImage = document.querySelector(".showcase-image");
   showcaseButtons.forEach((showcaseButton, index) => {
     /*Displaying project details */
     showcaseButton.children[0].innerHTML = Projects[index].name;
     showcaseButton.children[1].innerHTML = Projects[index].title;
+    console.log(showcaseButton);
     showcaseButton.addEventListener(
       "click",
       () => {
@@ -56,19 +59,21 @@ function funShowcase() {
       false
     );
   });
+
 }
 funShowcase();
 
-function returnLinks(socialLinks) {
+function returnLinks(socialLinks, color) {
   const linkKey = Object.keys(socialLinks);
   var socialElement = ``;
   linkKey.forEach((key, index) => {
     socialElement += `
-    <div>
-      <a href='${socialLinks[key]}' target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-${key}" ></i>  
-      </a>
-    </div>`;
+    <a href='${socialLinks[key]}' target="_blank" rel="noopener noreferrer">
+      <div style = "background-color:${color}">
+          <i class="fa fa-${key}" ></i>  
+      </div>
+    </a>
+    `;
   });
   return socialElement;
 }
@@ -107,7 +112,7 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
     <div class="description">
       <i class="fa fa-times close-me white"></i>
     <div
-      class="imgBg imgBg--large"
+      class="imgBg imgBg--large--desc"
       style="background-image: url(./utils/images/${circleColor}_circle.svg)"
     >
       <img class="roundImg img--large" src="${image}" alt="${name}'s Picture" />
@@ -120,8 +125,8 @@ function createCard(root, memberInfo, circleColor, isOB = false) {
         <div class="grey" style="padding-top: 3vh; font-size: 1.5vmax">
           ${description}
         </div>
-        <div class="social">
-          ${returnLinks(socialLinks)}
+        <div class="social" background->
+          ${returnLinks(socialLinks, circleColor)}
         </div>
       </div>
     </div>
