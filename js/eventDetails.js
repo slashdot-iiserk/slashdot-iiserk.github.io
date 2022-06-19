@@ -3,7 +3,7 @@ const pastEvents = [
     name: "WEBSITE DEVELOPMENT WORKSHOP",
     image: "./utils/images/events/1.png",
     description:
-      "Website ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea     commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea ",
+      "Presenting before you, the first ever milestone achieved by this club - the maiden workshop conducted, on Web Development skills. The audience spent an evening, surfing over the fundamentals of Git, GitHub and HTML Basics.",
   },
   {
     name: "BLENDER WORKSHOP",
