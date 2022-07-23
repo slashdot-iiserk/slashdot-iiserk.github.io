@@ -108,6 +108,13 @@
   text-transform: uppercase;
 }
 
+.coming-soon {
+  font-weight: 600;
+  font-size: 2.5vh;
+  color: white;
+  text-transform: uppercase;
+}
+
 .event-line{
   height: 0; 
   width: 24vw; 
