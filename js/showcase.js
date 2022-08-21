@@ -1,12 +1,15 @@
 import { Projects } from "./showcaseData.js";
 
 function createCard(root, projectInfo, wow_time_delay) {
-  const { projectName, image, desc, author } = projectInfo;
+  const { projectName, image, link, desc, author } = projectInfo;
   root.innerHTML += `
         <div class="card animate__animated wow animate__fadeInUp animate__fast" data-wow-delay="${wow_time_delay}" data-wow-offset="-200">
-            <img class="projectImg" src="${image}" alt="">
+            <a href="${link}">
+                <img class="projectImg" src="${image}" alt="">
+            </a>
             <h1 class="projectName">${projectName.toUpperCase()}</h1>
             <p class="projectDesc">${desc}</p>
+            <div class="projectDesc"><i>Authors: ${author}</i></div>
         </div>
     `;
 }
