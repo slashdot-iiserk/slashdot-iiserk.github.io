@@ -7,7 +7,7 @@ export const Projects = [
   },
   {
     projectName: "Ytfzf",
-    image: "assets/showcase/ytfzf.png",
+    image: "../assets/showcase/ytfzf.png",
     desc: "A POSIX script that helps you find Youtube videos (without API) and opens/downloads them using mpv/youtube-dl",
     author: "Harsith",
   },

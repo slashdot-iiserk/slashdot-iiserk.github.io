@@ -3,7 +3,7 @@ import { pastEvents, upcomingEvents } from "./eventDetails.js";
 function pastEventsUpdater() {
   let eventBoxes = document.querySelectorAll(".past-event-boxes")[0];
   for (let index = 0; index < pastEvents.length; index++) {
-    const newEvent = `<img src="${pastEvents[index].image}" alt="" class="past-event-image">
+    const newEvent = `<a href="${pastEvents[index].link}"><img src="${pastEvents[index].image}" alt="" class="past-event-image"></a>
     <div class="past-event-details">
       <p class="past-event-topic">${pastEvents[index].name}</p>
       <p class="past-event-desc">${pastEvents[index].description}</p>
